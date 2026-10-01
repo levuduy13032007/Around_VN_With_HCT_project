@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đồng Nai</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- menu -->
+    <div id="wrapper">
+      <header>
+        <div class="menu container">
+          <a
+            href="/Around_VN_With_HCT_project/interface/main_interface.html"
+            class="logo"
+            >TRAVEL AROUND VN</a
+          >
+          <div class="information">
+            <ul id="main-menu">
+              <li>
+                <a
+                  class="active"
+                  href="/Around_VN_With_HCT_project/content/Nam/dongnai/dongnai-content.html"
+                  >THÔNG TIN</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Nam/dongnai/dongnai-blog.html"
+                  >BLOG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Nam/dongnai/dongnai-booking.html"
+                  >BOOKING</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!--Nhạc-->
+      <div class="music-icon">
+        <i class="fa-solid fa-music"></i>
+      </div>
+
+      <!-- Modal điều khiển nhạc -->
+      <div class="music-modal">
+        <div class="modal-content">
+          <span class="close-btn">×</span>
+          <div class="music-info">
+            <span class="song-title">Tên bài hát</span>
+            <div class="wave-animation"></div>
+          </div>
+          <div class="controls">
+            <button class="control-btn prev-btn">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="control-btn play-pause-btn">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="control-btn next-btn">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+            <input
+              type="range"
+              class="volume-slider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio element ẩn -->
+      <audio id="background-audio" autoplay loop></audio>
+
+      <!-- banner -->
+      <div class="banner">
+        <img
+          src="/Around_VN_With_HCT_project/image/content/banner/booking-banner.jpg"
+          alt="Đồng Nai Booking Banner"
+        />
+      </div>
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Booking</h1>
+      <div class="first-content">
+        <p>
+          Chúng tôi sẽ đưa bạn khám phá Khu du lịch Bửu Long thơ mộng, chinh phục
+          Thác Giang Điền hoang sơ và tận hưởng không gian xanh mát tại Vườn
+          quốc gia Cát Tiên. Bạn cũng sẽ được thưởng thức đặc sản gà hấp bưởi,
+          cơm gà cá mặn và trải nghiệm nét văn hóa độc đáo của vùng đất này. Dù
+          bạn muốn nghỉ dưỡng trong resort ven sông hay tận hưởng không gian yên
+          bình tại homestay giữa thiên nhiên, Đồng Nai luôn có lựa chọn lý tưởng
+          dành cho bạn.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!--Nội Dung-->
+    <div class="hotel">
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/booking1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.020241353105!2d105.80972827509314!3d21.031876080618215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab6cecd4ed9d%3A0xaa0bbd53d1491c7a!2sLotte%20Hotel%20Hanoi!5e0!3m2!1svi!2s!4v1740761661748!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>The Mira Central Park – Khách Sạn 5 Sao Hiện Đại Bậc Nhất Đồng Nai</h3>
+          <p>
+            Tọa lạc ngay trung tâm TP. Biên Hòa, The Mira Central Park là khách
+            sạn 5 sao sang trọng bậc nhất Đồng Nai, mang phong cách hiện đại và
+            đẳng cấp. Với hệ thống phòng nghỉ tiện nghi, nhà hàng cao cấp, hồ
+            bơi ngoài trời và dịch vụ spa thư giãn, nơi đây là lựa chọn lý tưởng
+            cho du khách và doanh nhân khi đến Biên Hòa. Khách sạn còn có không
+            gian tổ chức sự kiện sang trọng, phù hợp cho hội nghị và tiệc cưới.
+          </p>
+        </div>
+      </div>
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/booking2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1817513153896!2d105.85380007509295!3d21.02541248062307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abeb98f8b54d%3A0x90d6982234a65f25!2sSofitel%20Legend%20Metropole%20Hotel!5e0!3m2!1svi!2s!4v1740763407487!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>Aurora Hotel Plaza – Không Gian Nghỉ Dưỡng Đẳng Cấp Tại Biên Hòa</h3>
+          <p>
+            Nằm ngay trung tâm TP. Biên Hòa, Aurora Hotel Plaza mang đến không
+            gian nghỉ dưỡng sang trọng với thiết kế hiện đại, phòng ốc rộng rãi
+            và tiện nghi cao cấp. Khách sạn có hồ bơi ngoài trời, phòng gym, spa
+            và nhà hàng phục vụ ẩm thực đa dạng. Với vị trí thuận lợi, du khách
+            có thể dễ dàng di chuyển đến các khu du lịch nổi tiếng như Thác
+            Giang Điền, Làng Bưởi Tân Triều hay Vườn Quốc Gia Cát Tiên.
+          </p>
+        </div>
+      </div>
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/booking3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3739992000997!2d105.83931867509276!3d21.017716280628893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8f9af04521%3A0xdccfaebef264a0b1!2sHotel%20du%20Parc%20Hanoi!5e0!3m2!1svi!2s!4v1740763466259!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>Khách Sạn Đồng Nai – Không Gian Nghỉ Dưỡng Tiện Nghi</h3>
+          <p>
+            Là một trong những khách sạn lâu đời và uy tín tại Biên Hòa, Khách
+            Sạn Đồng Nai mang đến không gian nghỉ ngơi thoải mái với hệ thống
+            phòng ốc hiện đại, nhà hàng phục vụ ẩm thực Việt Nam và quốc tế, cùng
+            các tiện ích như phòng hội nghị, quán cà phê và khu vực giải trí.
+            Với vị trí trung tâm, du khách dễ dàng di chuyển đến các điểm du lịch
+            và khu công nghiệp trong khu vực.
+          </p>
+        </div>
+      </div>
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/booking4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1118817595084!2d105.8482912750931!3d21.028208880621065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab952308667b%3A0xdb99ed2e3e265856!2sApricot%20Hotel!5e0!3m2!1svi!2s!4v1740763500081!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>Khách Sạn River Hotel Biên Hòa – Nghỉ Dưỡng Ven Sông</h3>
+          <p>
+            Tọa lạc bên bờ sông Đồng Nai, River Hotel Biên Hòa mang đến không
+            gian nghỉ dưỡng yên bình, tách biệt với sự nhộn nhịp của thành phố.
+            Khách sạn có thiết kế hiện đại, phòng nghỉ tiện nghi với tầm nhìn
+            hướng sông thoáng đãng. Bên cạnh đó, du khách có thể tận hưởng các
+            dịch vụ như hồ bơi ngoài trời, quán cà phê sân thượng và nhà hàng
+            ven sông phục vụ các món hải sản tươi ngon.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              Chúng tôi mang sứ mệnh giới thiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>
+              Điện thoại:
+              <ul>
+                <li>(+84) 79439905</li>
+                <li>(+84) 99860345</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>© 2024 [Tên công ty]. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $("header").addClass("sticky");
+        } else {
+          $("header").removeClass("sticky");
+        }
+      });
+    });
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

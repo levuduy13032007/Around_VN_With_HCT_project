@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <!--liên kết với swiper để làm banner-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- liên kết với file font awesome để thêm icon-->
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <!-- liên kết đến font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+    <title>Travel Around Việt Nam With HCT</title>
+  </head>
+  <body>
+    <!-- thiết kế phần menu đầu trang web/ Sử dụng flex box -->
+    <div class="head-background">
+      <header>
+        <!--menu-->
+        <div class="menu">
+          <div class="main-page scroll-animation">TRAVEL AROUND VN</div>
+          <!--search box-->
+          <div class="search-box scroll-animation">
+            <form action="" id="search-box-content">
+              <input
+                type="text"
+                autocomplete="off"
+                name="text"
+                id="search-text"
+                placeholder="Bạn muốn đi đâu?"
+              />
+            </form>
+          </div>
+          <ul class="information-page">
+            <li>
+              <a href="">ĐIỂM ĐẾN</a>
+              <ul class="sub-information">
+                <ul>
+                  <li>
+                    <a
+                      href="/Around_VN_With_HCT_project/content/Bac/hanoi/hanoi-content.html"
+                      >Hà Nội</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Around_VN_With_HCT_project/content/Bac/laichau/laichau-content.html"
+                      >Lai Châu</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Around_VN_With_HCT_project/content/Bac/hagiang/hagiang-content.html"
+                      >Hà Giang</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Around_VN_With_HCT_project/content/Trung/lamdong/lamdong-content.html"
+                      >Lâm Đồng</a
+                    >
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a
+                      href="/Around_VN_With_HCT_project/content/Nam/angiang/angiang-content.html"
+                      >An Giang</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Around_VN_With_HCT_project/content/Nam/dongnai/dongnai-content.html"
+                      >Đồng Nai</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Around_VN_With_HCT_project/content/Nam/tayninh/tayninh-content.html"
+                      >Tây Ninh</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="/Around_VN_With_HCT_project/content/Nam/vungtau/vungtau-content.html"
+                      >Vung Tàu</a
+                    >
+                  </li>
+                </ul>
+              </ul>
+            </li>
+            <li>
+              <a href="/Around_VN_With_HCT_project/interface/tour.html">TOUR</a>
+            </li>
+            <li>
+              <a href="/Around_VN_With_HCT_project/interface/artistry.html"
+                >NGHỆ THUẬT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <!--Nhạc-->
+
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+    <!--Banner-->
+    <div class="banner">
+      <div class="slider" style="--quantity: 10">
+        <div class="item" style="--position: 1">
+          <img src="/Around_VN_With_HCT_project/image/banner/banner1.jpg" />
+        </div>
+        <div class="item" style="--position: 2">
+          <img src="/Around_VN_With_HCT_project/image/banner/banner2.jpg" />
+        </div>
+        <div class="item" style="--position: 3">
+          <img src="/Around_VN_With_HCT_project/image/banner/banner3.jpg" />
+        </div>
+        <div class="item" style="--position: 4">
+          <img src="/Around_VN_With_HCT_project/image/banner/banner4.jpg" />
+        </div>
+        <div class="item" style="--position: 5">
+          <img src="/Around_VN_With_HCT_project/image/banner/banner5.jpg" />
+        </div>
+        <div class="item" style="--position: 6">
+          <img src="/Around_VN_With_HCT_project/image/banner/banner6.jpg" />
+        </div>
+        <div class="item" style="--position: 7">
+          <img src="/Around_VN_With_HCT_project/image/banner/banner7.jpg" />
+        </div>
+        <div class="item" style="--position: 8">
+          <img src="/Around_VN_With_HCT_project/image/banner/banner8.jpg" />
+        </div>
+        <div class="item" style="--position: 9">
+          <img src="/Around_VN_With_HCT_project/image/banner/banner9.jpg" />
+        </div>
+        <div class="item" style="--position: 10">
+          <img src="/Around_VN_With_HCT_project/image/banner/banner10.jpg" />
+        </div>
+      </div>
+
+      <!--Under content-->
+      <div class="under-content">
+        <h1>TRAVEL AROUND VIETNAM</h1>
+        <h2>With HCT</h2>
+        <div class="insite-content">
+          <p>
+            <strong>Việt Nam</strong>, đất nước địa linh nhân kiệt, nơi núi sông
+            hùng vĩ nuôi dưỡng những con người kiên cường, bất khuất, rạng danh
+            non sông.
+          </p>
+        </div>
+        <div class="model-under-content"></div>
+      </div>
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!--Slogan-->
+    <div class="sologan-border">
+      <div class="slogan">
+        <div class="slogan-item scroll-animation">
+          <i class="fa-solid fa-star"></i>
+          <h2>Tự tin</h2>
+          <p>Khám phá thế giới theo cách của bạn.</p>
+        </div>
+        <div class="slogan-item scroll-animation">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <h2>Sáng tạo</h2>
+          <p>Mỗi chuyến đi là một câu chuyện độc đáo.</p>
+        </div>
+        <div class="slogan-item scroll-animation">
+          <i class="fa-solid fa-rocket"></i>
+          <h2>Đột phá</h2>
+          <p>Vượt qua giới hạn chinh phục mọi điểm đến.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--feature-->
+
+    <div class="feature">
+      <div class="fea fea-1 scroll-animation">
+        <a href="/Around_VN_With_HCT_project/location/outstanding.html">
+          <img src="/Around_VN_With_HCT_project/image/feature/feature1.jpg" />
+          <h2>Địa Điểm Nổi Bậc</h2>
+        </a>
+      </div>
+      <div class="fea fea-2 scroll-animation">
+        <a href="/Around_VN_With_HCT_project/location/spirituality.html">
+          <img src="/Around_VN_With_HCT_project/image/feature/feature2.jpg" />
+          <h2>Vùng Đất Tâm Linh</h2>
+        </a>
+      </div>
+      <div class="fea fea-3 scroll-animation">
+        <a href="/Around_VN_With_HCT_project/location/moutain.html">
+          <img src="/Around_VN_With_HCT_project/image/feature/feature3.jpg" />
+          <h2>Núi Non Hùng Vĩ</h2>
+        </a>
+      </div>
+      <div class="fea fea-4 scroll-animation">
+        <a href="/Around_VN_With_HCT_project/location/sea.html">
+          <img src="/Around_VN_With_HCT_project/image/feature/feature4.jpg" />
+          <h2>Biển Cả Bao La</h2>
+        </a>
+      </div>
+      <div class="fea fea-5 scroll-animation">
+        <a href="/Around_VN_With_HCT_project/location/entertainment.html">
+          <img src="/Around_VN_With_HCT_project/image/feature/feature5.jpg" />
+          <h2>Vui Chơi Giả Trí</h2>
+        </a>
+      </div>
+    </div>
+
+    <!--Vietnam story-->
+    <div class="story-title scroll-animation">
+      <h1 class="fancy-title">VIỆT NAM</h1>
+    </div>
+    <div class="VN-story-container">
+      <!-- Mục 1 -->
+      <div class="VN-item scroll-animation">
+        <img
+          src="/Around_VN_With_HCT_project/image/others/story/story1.jpg"
+          alt="Image 1"
+          class="VN-image"
+        />
+        <div class="card-content">
+          <h2 class="card-title">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </h2>
+          <h2 class="card-title">Việt Nam - Dải Đất Hình Chữ S</h2>
+          <p class="card-description">
+            Việt Nam với 63 tỉnh thành, mỗi tỉnh mỗi vẻ, mang đậm nét văn hóa,
+            phong cảnh riêng biệt đặc sắc, hứa hẹn sẽ là những điểm đến hấp dẫn
+            cho những chuyến du lịch của các bạn. Việt Nam là đất nước trên dải
+            đất hình chữ S, nằm ở trung tâm khu vực Đông Nam Á.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mục 2 -->
+      <div class="VN-item scroll-animation">
+        <img
+          src="/Around_VN_With_HCT_project/image/others/story/story2.jpg"
+          alt="Image 2"
+          class="VN-image"
+        />
+        <div class="card-content">
+          <h2 class="card-title"><i class="fa-solid fa-people-group"></i></h2>
+          <h2 class="card-title">Nơi Giao Thoa Của 54 Dân Tộc Anh Em</h2>
+          <p class="card-description">
+            Với 54 dân tộc anh em, đất nước Việt Nam có nền văn hóa đa dạng và
+            phong phú từ miền Bắc đến miền Nam. Sự đa dạng và phong phú thế hiện
+            qua từng con người, từng vùng, từng địa phương.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mục 3 -->
+      <div class="VN-item scroll-animation">
+        <img
+          src="/Around_VN_With_HCT_project/image/others/story/story3.jpg"
+          alt="Image 3"
+          class="VN-image"
+        />
+        <div class="card-content">
+          <h2 class="card-title"><i class="fa-solid fa-route"></i></h2>
+          <h2 class="card-title">Điểm Đến Hấp Dẫn Cho Du Lịch và Đầu Tư</h2>
+          <p class="card-description">
+            Việt Nam là một đất nước đầy hứng khởi cho du lịch và đầu tư. Đời
+            sống đường phố nhộn nhịp, ẩm thực đặc sắc và cảnh đẹp hùng vĩ, tất
+            cả đều đang chờ đón bạn. Một đất nước không ngừng chuyển động.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mục 4 -->
+      <div class="VN-item scroll-animation">
+        <img
+          src="/Around_VN_With_HCT_project/image/others/story/story4.jpg"
+          alt="Image 4"
+          class="VN-image"
+        />
+        <div class="card-content">
+          <h2 class="card-title"><i class="fa-solid fa-seedling"></i></h2>
+          <h2 class="card-title">
+            Vẻ Đẹp Thiên Nhiên Tuyệt Mỹ - Từ Bắc Vào Nam
+          </h2>
+          <p class="card-description">
+            Thêm một lý do nữa để ghé thăm Việt Nam chính là vẻ đẹp thiên nhiên
+            của nơi này. Miền Bắc có những ngọn núi hùng vĩ và vịnh đá vôi tuyệt
+            đẹp. Đường biển miền Trung dẫn lối đến những di tích lịch sử và
+            những bãi tắm thơ mộng.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Video-->
+
+    <div class="video-container">
+      <!--Tiêu đề-->
+      <div class="story-title scroll-animation">
+        <h1 class="fancy-title">THƯỚC PHIM</h1>
+      </div>
+      <!-- Phần Video -->
+      <div class="video-section">
+        <div class="video-wrapper scroll-animation">
+          <video id="myVideo" controls>
+            <source
+              src="/Around_VN_With_HCT_project/video/around-vn-video.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ video.
+          </video>
+          <div class="video-overlay">
+            <span>Xem Ngay</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phần Nội Dung -->
+      <div class="content-section">
+        <div class="content-item scroll-animation">
+          <h2>Vẻ đẹp thiên nhiên hùng vĩ</h2>
+          <p>
+            Việt Nam sở hữu cảnh quan thiên nhiên đa dạng và tuyệt đẹp, từ những
+            ngọn núi trùng điệp ở miền Bắc đến những bãi biển cát trắng trải dài
+            ở miền Trung và miền Nam.
+          </p>
+        </div>
+        <div class="content-item scroll-animation">
+          <h2>Văn hóa lịch sử lâu đời</h2>
+          <p>
+            Việt Nam có lịch sử hơn 4.000 năm dựng nước và giữ nước, với nhiều
+            di tích lịch sử và văn hóa nổi tiếng.
+          </p>
+        </div>
+        <div class="content-item scroll-animation">
+          <h2>Ẩm thực phong phú và đa dạng</h2>
+          <p>
+            Ẩm thực Việt Nam nổi tiếng thế giới với sự phong phú và đa dạng.
+            Phở, bánh mì, nem rán là những món ăn đường phố được yêu thích.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Hình Ảnh-->
+    <div class="story-title scroll-animation">
+      <h1 class="fancy-title">GÓC HÌNH ẢNH</h1>
+    </div>
+    <div class="image">
+      <!--các tấm hình-->
+      <div class="img-item scroll-animation">
+        <div class="card-inner">
+          <div class="card-front">
+            <img
+              src="/Around_VN_With_HCT_project/image/others/others-img/others-img1.png"
+            />
+          </div>
+          <div class="card-back">
+            <h2>Cầu Vàng</h2>
+            <p>
+              nổi bật với thiết kế hai bàn tay khổng lồ nâng đỡ lối đi. Nằm ở độ
+              cao 1.400m, cầu mang đến tầm nhìn ngoạn mục, thu hút nhiều du
+              khách.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="img-item scroll-animation">
+        <div class="card-inner">
+          <div class="card-front">
+            <img
+              src="/Around_VN_With_HCT_project/image/others/others-img/others-img2.png"
+            />
+          </div>
+          <div class="card-back">
+            <h2>Phố cổ Hội An</h2>
+            <p>
+              Phố cổ Hội An là di sản thế giới nổi tiếng với kiến trúc cổ kính,
+              đèn lồng rực rỡ và văn hóa giao thoa độc đáo. Nơi đây thu hút du
+              khách bởi vẻ đẹp hoài cổ và không gian yên bình.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="img-item scroll-animation">
+        <div class="card-inner">
+          <div class="card-front">
+            <img
+              src="/Around_VN_With_HCT_project/image/others/others-img/others-img3.png"
+            />
+          </div>
+          <div class="card-back">
+            <h2>Thành phố Đà Lạt</h2>
+            <p>
+              Đà Lạt là thành phố ngàn hoa, nổi tiếng với khí hậu mát mẻ, cảnh
+              đẹp thơ mộng và kiến trúc châu Âu cổ kính. Đây là điểm đến lý
+              tưởng cho du lịch nghỉ dưỡng và khám phá thin nhiên.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="img-item scroll-animation">
+        <div class="card-inner">
+          <div class="card-front">
+            <img
+              src="/Around_VN_With_HCT_project/image/others/others-img/others-img4.png"
+            />
+          </div>
+          <div class="card-back">
+            <h2>Miếu Bà Chúa Xứ</h2>
+            <p>
+              Miếu Bà Chúa Xứ tại Núi Sam, An Giang, là điểm du lịch tâm linh
+              nổi tiếng. Với kiến trúc độc đáo và không gian linh thiêng, miếu
+              thu hút hàng triệu du khách mỗi năm, đặc biệt trong mùa lễ hội vía
+              Bà.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="img-item scroll-animation">
+        <div class="card-inner">
+          <div class="card-front">
+            <img
+              src="/Around_VN_With_HCT_project/image/others/others-img/others-img5.png"
+            />
+          </div>
+          <div class="card-back">
+            <h2>Đảo Phú Quốc</h2>
+            <p>
+              Phú Quốc là hòn đảo lớn nhất của Việt Nam, nằm trong vịnh Thái
+              Lan, thuộc tỉnh Kiên Giang. Đảo này nổi tiếng với những bãi biển
+              tuyệt đẹp, nước biển trong xanh, rừng nguyên sinh phong phú và nền
+              ẩm thực đặc sắc
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="img-item scroll-animation">
+        <div class="card-inner">
+          <div class="card-front">
+            <img
+              src="/Around_VN_With_HCT_project/image/others/others-img/others-img6.png"
+            />
+          </div>
+          <div class="card-back">
+            <h2>Bàu Trắng Bình Thuận</h2>
+            <p>
+              Bàu Trắng là một điểm du lịch nổi tiếng ở Bình Thuận, cách thành
+              phố Phan Thiết khoảng 65 km. Đây là một hồ nước ngọt tự nhiên giữa
+              những đồi cát trắng mênh mông, tạo nên khung cảnh hoang sơ, độc
+              đáo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="img-item scroll-animation">
+        <div class="card-inner">
+          <div class="card-front">
+            <img
+              src="/Around_VN_With_HCT_project/image/others/others-img/others-img7.png"
+            />
+          </div>
+          <div class="card-back">
+            <h2>Đất Mũi Cà Mau</h2>
+            <p>
+              Mũi Cà Mau là điểm cực Nam của Việt Nam, thuộc tỉnh Cà Mau, nơi
+              duy nhất trên đất liền nước ta có thể nhìn thấy mặt trời mọc ở
+              biển Đông và lặn ở biển Tây.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="img-item scroll-animation">
+        <div class="card-inner">
+          <div class="card-front">
+            <img
+              src="/Around_VN_With_HCT_project/image/others/others-img/others-img8.png"
+            />
+          </div>
+          <div class="card-back">
+            <h2>Vịnh Cam Ranh</h2>
+            <p>
+              Vịnh Cam Ranh là một trong những vịnh biển đẹp và kín gió nhất
+              Việt Nam, nằm ở tỉnh Khánh Hòa, cách Nha Trang khoảng 60 km về
+              phía nam. Với vị trí chiến lược và vẻ đẹp tự nhiên.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="img-item scroll-animation">
+        <div class="card-inner">
+          <div class="card-front">
+            <img
+              src="/Around_VN_With_HCT_project/image/others/others-img/others-img9.png"
+            />
+          </div>
+          <div class="card-back">
+            <h2>Vịnh Hạ Long</h2>
+            <p>
+              Vịnh Hạ Long là một trong những danh lam thắng cảnh nổi tiếng nhất
+              Việt Nam, nằm ở tỉnh Quảng Ninh. Vịnh được UNESCO công nhận là Di
+              sản Thiên nhiên Thế giới
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Tin Tức-->
+    <div class="story-title scroll-animation">
+      <h1 class="fancy-title">TIN TỨC</h1>
+    </div>
+    <div class="border-news">
+      <div class="news-slideshow-container scroll-animation">
+        <div class="slides" id="slides">
+          <!--các tin tức sẽ nằm ở đây-->
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news1.webp"
+              />
+              <p class="date">25/6</p>
+              <p class="text-title">Bộ GD-ĐT công bố dự thảo</p>
+              <p class="text-body">
+                Thông tin được chia sẻ trong tọa đàm góp ý chuẩn chương trình
+                đào tạo trình độ ĐH.
+              </p>
+            </div>
+            <a
+              href="https://thanhnien.vn/bo-gd-dt-cong-bo-danh-sach-75-nganh-dao-tao-ve-vi-mach-ban-dan-185250228120623928.htm"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news2.webp"
+              />
+              <p class="date">01/3</p>
+              <p class="text-title">Việt Nam phát triển 5 đại học</p>
+              <p class="text-body">
+                Nội dung này được đề cập trong Quy hoạch mạng lưới cơ sở giáo
+                dục đại học
+              </p>
+            </div>
+            <a
+              href="https://vnexpress.net/viet-nam-phat-trien-5-dai-hoc-trong-diem-ve-ky-thuat-cong-nghe-4855508.html"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news3.jpg"
+              />
+              <p class="date">28/2</p>
+              <p class="text-title">Công viên địa chất Lạng Sơn</p>
+              <p class="text-body">
+                Lạng Sơn là một trong những địa phương sở hữu hệ thống hang động
+                phong phú.
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/cong-vien-dia-chat-lang-son-khai-thac-tiem-nang-du-lich-tham-hiem-hang-dong-c51603056.epi."
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news4.webp"
+              />
+              <p class="date">25/6</p>
+              <p class="text-title">Những điều gây sốc tại lễ hội</p>
+              <p class="text-body">
+                Maha Kumbh Mela của Ấn Độ giáo khép lại vào ngày 26/2 với niềm
+                thỏa mãn.
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/nhung-dieu-gay-soc-tai-le-hoi-dong-nhat-hanh-tinh-c51603052.epi"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news5.avif"
+              />
+              <p class="date">01/3</p>
+              <p class="text-title">Vẻ bình yên 'làng đá nở hoa'</p>
+              <p class="text-body">
+                Trải qua lịch sử hơn 400 năm, làng đá Khuổi Ky (Cao Bằng)
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/ve-binh-yen-lang-da-no-hoa-tram-tuoi-o-cao-bang-c51602854.epi"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news6.jpg"
+              />
+              <p class="date">27/3</p>
+              <p class="text-title">Linh thiêng cột cờ Lũng Pô</p>
+              <p class="text-body">
+                Cột cờ Lũng Pô sừng sững nơi vùng biên ải A Mú Sung, huyện Bát
+                Xát.
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/linh-thieng-cot-co-lung-po-noi-con-song-hong-chay-vao-dat-viet-c51603405.epi"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news7.jpg"
+              />
+              <p class="date">21/6</p>
+              <p class="text-title">Hà Nội đón gần 4,6 triệu khách</p>
+              <p class="text-body">
+                2 tháng đầu năm 2025, Hà Nội đón 4,59 triệu lượt khách, tăng
+                7,4%.
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/2-thang-dau-nam-2025-ha-noi-don-gan-4-6-trieu-luot-khach-du-lich-c51602590.epi"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news8.jpg.avif"
+              />
+              <p class="date">12/9</p>
+              <p class="text-title">Con đường xuyên rừng ngập mặn</p>
+              <p class="text-body">
+                Đường Rừng Sác xuyên rừng ngập mặn dài 36,5 km, rộng 30m, có
+                tổng đầu.
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/con-duong-xuyen-rung-ngap-man-dep-nhu-tranh-ve-o-can-gio-c51601150.epi"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news9.jpg.avif"
+              />
+              <p class="date">05/8</p>
+              <p class="text-title">Màn đấu khẩu ông Trump</p>
+              <p class="text-body">
+                Tổng thống Mỹ Donald Trump và Tổng thống Ukraine - ông Volodymyr
+                Zelensky
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/man-dau-khau-nay-lua-giua-ong-trump-va-ong-zelensky-c51603373.epi"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news10.jpg"
+              />
+              <p class="date">15/5</p>
+              <p class="text-title">Tổng thống Ukraine nên xin lỗi</p>
+              <p class="text-body">
+                Các nguồn tin của CNN cho biết, sau khi phiên thảo luận công
+                khai giữa.
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/man-dau-khau-nay-lua-giua-ong-trump-va-ong-zelensky-c51603373.epi"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news11.jpg.avif"
+              />
+              <p class="date">18/6</p>
+              <p class="text-title">Mexico áp thuế tương tự Mỹ</p>
+              <p class="text-body">
+                Mexico đang cân nhắc áp mức thuế tương tự Mỹ đối với hàng hóa
+                nhập khẩu.
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/mexico-ap-thue-tuong-tu-my-de-doi-pho-trung-quoc-c51603558.epi"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news12.jpg.avif"
+              />
+              <p class="date">10/4</p>
+              <p class="text-title">Chân dung tân Đại sứ Nga tại Mỹ</p>
+              <p class="text-body">
+                Bộ Ngoại giao Nga cho biết ông Alexandr Darchiev sẽ sớm chính
+                thức.
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/chan-dung-tan-dai-su-nga-tai-my-nguoi-ky-vong-pha-bang-quan-he-c51602680.epi"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news13.jpg.avif"
+              />
+              <p class="date">01/4</p>
+              <p class="text-title">Triều Tiên tiến hành tập trận</p>
+              <p class="text-body">
+                Chủ tịch Triều Tiên Kim Jong Un đã giám sát cuộc tập trận phóng
+                tên lửa.
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/trieu-tien-tien-hanh-tap-tran-phong-ten-lua-hanh-trinh-chien-luoc-c51602741.epi"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+          <div class="news">
+            <div class="news-details">
+              <img
+                src="/Around_VN_With_HCT_project/image/others/news/news14.jpg.avif"
+              />
+              <p class="date">19/3</p>
+              <p class="text-title">Cựu chủ tịch Bamboo Capital</p>
+              <p class="text-body">
+                Nguyễn Hồ Nam, cựu chủ tịch Công ty cổ phần Tập đoàn Bamboo
+                Capital.
+              </p>
+            </div>
+            <a
+              href="https://baomoi.com/cuu-chu-tich-bamboo-capital-nguyen-ho-nam-bi-khoi-to-c51603468.epi"
+              target="_blank"
+              ><button class="news-button">Tìm Hiểu Thêm</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="controls-news">
+      <button onclick="prevSlide()" class="button-news type1">
+        <span class="btn-txt">Trước</span>
+      </button>
+      <button onclick="nextSlide()" class="button-news type1">
+        <span class="btn-txt">Sau</span>
+      </button>
+    </div>
+
+    <!--Footer-->
+
+    <hr />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Về chúng tôi</h2>
+            <p>
+              Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Liên hệ</h2>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>Điện thoại: (+84) 99860345</p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>&copy; 2025 Bản quyền thuộc về tổ 1</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!--link đến tilt-->
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+  <script>
+    //jvs của search box
+    const input = document.getElementById("search-text");
+    const placeholderTexts = [
+      "Bạn muốn đi đến chân trời nàoo",
+      "Đà Lạt?",
+      "Đưa nhau đi trốn",
+      "TP.Hồ Chí Minh?",
+      "Phú Quốc?",
+      "Nơi nào phù hợp với bạn nhờ",
+      "Nha Trang?",
+      "Mình rời thành phố chật chội náo nức",
+      "Về Nghệ An",
+      "Dìa Miền Tây!!",
+      // ... thêm các nội dung placeholder khác
+    ];
+
+    let currentPlaceholderIndex = 0;
+
+    setInterval(() => {
+      input.placeholder = placeholderTexts[currentPlaceholderIndex];
+      currentPlaceholderIndex =
+        (currentPlaceholderIndex + 1) % placeholderTexts.length;
+    }, 4000); // Thay đổi nội dung mỗi 2 giây
+
+    //jvs của search box
+
+    const searchForm = document.getElementById("search-box-content"); //id của form
+    const searchInput = document.getElementById("search-text"); //id của input
+    const searchUrls = {
+      "hà nội":
+        "/Around_VN_With_HCT_project/content/bac/hanoi/hanoi-content.html",
+      "lai châu":
+        "/Around_VN_With_HCT_project/content/bac/laichau/laichau-content.html",
+      "hà giang":
+        "/Around_VN_With_HCT_project/content/Bac/hagiang/hagiang-content.html",
+      "an giang":
+        "/Around_VN_With_HCT_project/content/Nam/angiang/angiang-content.html",
+      "vũng tàu":
+        "/Around_VN_With_HCT_project/content/Nam/vungtau/vungtau-content.html",
+      "tây ninh":
+        "/Around_VN_With_HCT_project/content/Nam/tayninh/tayninh-content.html",
+      "đồng nai":
+        "/Around_VN_With_HCT_project/content/Nam/dongnai/dongnai-content.html",
+      "lâm đồng":
+        "/Around_VN_With_HCT_project/content/Trung/lamdong/lamdong-content.html",
+      // ... thêm các trang web khác
+    };
+
+    searchForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const searchTerm = searchInput.value.toLowerCase(); // Chuyển đổi từ khóa tìm kiếm thành chữ thường
+      const searchUrl = searchUrls[searchTerm];
+
+      if (searchUrl) {
+        window.location.href = searchUrl;
+      } else {
+        alert("Không tìm thấy trang web phù hợp.");
+      }
+    });
+
+    //tin tức
+    const slides = document.getElementById("slides");
+    const slideWidth = 100 / 4;
+    let currentIndex = 0;
+    const totalSlides = 15;
+    const visibleSlides = 3;
+
+    function updateSlidePosition() {
+      const offset = -(currentIndex * slideWidth);
+      slides.style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide() {
+      if (currentIndex < totalSlides - visibleSlides) {
+        currentIndex++;
+        updateSlidePosition();
+      }
+    }
+
+    function prevSlide() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlidePosition();
+      }
+    }
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      // Đợi 1 giây trước khi ẩn
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+</html>

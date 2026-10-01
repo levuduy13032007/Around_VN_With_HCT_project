@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biển Cả Bao La</title>
+    <link rel="stylesheet" href="location-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="menu container">
+        <a
+          href="/Around_VN_With_HCT_project/interface/main_interface.html"
+          class="logo"
+          >TRAVEL AROUND VN</a
+        >
+        <nav class="information">
+          <ul id="main-menu">
+            <li>
+              <a href="#" class="active">THÔNG TIN</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Nhạc-->
+
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+    <!-- Banner -->
+    <div class="banner">
+      <img
+        src="/Around_VN_With_HCT_project/image/location/sea/banner.jpg"
+        alt="Banner"
+      />
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Biển Cả Bao La</h1>
+      <div class="first-content">
+        <p>
+          Hòa mình vào làn nước biển trong xanh, nô đùa trên bãi cát trắng mịn,
+          ngắm nhìn hoàng hôn lãng mạn và thưởng thức hải sản tươi ngon. Nơi đây
+          là điểm đến lý tưởng để bạn thư giãn, tận hưởng không khí trong lành
+          và tạm quên đi những lo toan của cuộc sống.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Nội Dung -->
+    <section id="content">
+      <div class="main-content">
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/sea/location1.jpg"
+              alt="Vịnh Hạ Long"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Vịnh Hạ Long - Quảng Ninh</h3>
+            <p>
+              Vịnh Hạ Long ở Quảng Ninh Vịnh Hạ Long nằm ở phía Bắc Việt Nam,
+              thuộc tỉnh Quảng Ninh. Vịnh Hạ Long được UNESCO công nhận là Di
+              sản Thiên nhiên Thế giới vào năm 1994 và một lần nữa vào năm 2000,
+              bởi vì nơi đây sở hữu cảnh quan thiên nhiên tuyệt đẹp với hàng
+              ngàn hòn đảo lớn nhỏ cùng những hang động kỳ vĩ.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/sea/location2jpg.jpg"
+              alt="Biển Mỹ Khê"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Biển Mỹ Khê - Đà Nẵng</h3>
+            <p>
+              Được đánh giá là bãi biển quyến rũ nhất hành tinh, mỗi năm biển Mỹ
+              Khê thu hút hàng triệu du khách trong và ngoài nước. Bởi vậy nếu
+              đam mê du lịch biển mà lại bỏ qua nơi này quả là thiếu sót. Nằm
+              cách trung tâm Đà Nẵng chỉ khoảng 3km thuận lợi cho quá trình di
+              chuyển.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/sea/location3.jpg"
+              alt="Biển Thiên Cầm"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Biển Thiên Cầm - Hà Tĩnh</h3>
+            <p>
+              Vịnh Hạ Long ở Quảng Ninh Vịnh Hạ Long nằm ở phía Bắc Việt Nam,
+              thuộc tỉnh Quảng Ninh. Vịnh Hạ Long được UNESCO công nhận là Di
+              sản Thiên nhiên Thế giới vào năm 1994 và một lần nữa vào năm 2000,
+              bởi vì nơi đây sở hữu cảnh quan thiên nhiên tuyệt đẹp.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/sea/location4.jpg"
+              alt="Biển Sầm Sơn"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Biển Sầm Sơn - Thanh Hoá</h3>
+            <p>
+              Đối với du lịch biển ở miền Bắc thì không thể nhắc đến bãi biển
+              Sầm Sơn ở Thanh Hoá. Cung đường biển Sầm Sơn có hình trăng khuyết
+              khá độc đáo, đường bờ biển dài chừng 9km chạy theo chân núi Trường
+              Lệ đến xã Quảng Cư.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/sea/location5.jpg"
+              alt="Bãi biển Đồ Sơn"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Bãi biển Đồ Sơn - Hải Phòng</h3>
+            <p>
+              Nằm cách thủ đô chỉ khoảng 120km nên Đồ Sơn cũng là điểm đến cực
+              hút khách khi lựa chọn du lịch Hải Phòng mỗi cuối tuần và dịp hè
+              về. Biển Đồ Sơn sở hữu cảnh sắc non nước hữu tình khi hòa cùng
+              những đồi thông.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <hr />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Về chúng tôi</h2>
+            <p>
+              Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Liên hệ</h2>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>Điện thoại: (+84) 99860345</p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>&copy; 2025 Bản quyền thuộc về tổ 1</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      //load
+      const loaderContainer = document.querySelector(".loader-container");
+
+      window.addEventListener("load", () => {
+        // Đợi 1 giây trước khi ẩn
+        setTimeout(() => {
+          loaderContainer.classList.add("unactive");
+        }, 500);
+      });
+    </script>
+  </body>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

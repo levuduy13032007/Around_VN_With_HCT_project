@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Địa Điểm Giải Trí</title>
+    <link rel="stylesheet" href="location-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="menu container">
+        <a
+          href="/Around_VN_With_HCT_project/interface/main_interface.html"
+          class="logo"
+          >TRAVEL AROUND VN</a
+        >
+        <nav class="information">
+          <ul id="main-menu">
+            <li>
+              <a href="#" class="active">THÔNG TIN</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Nhạc-->
+
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+    <!-- Banner -->
+    <div class="banner">
+      <img
+        src="/Around_VN_With_HCT_project/image/location/entertainment/banner.jpg"
+        alt="Banner"
+      />
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Địa Điểm Giải Trí</h1>
+      <div class="first-content">
+        <p>
+          Bùng nổ cảm xúc với những trò chơi mạo hiểm, những công viên giải trí
+          hiện đại, những khu vui chơi náo nhiệt. Nơi đây là điểm đến lý tưởng
+          để bạn giải tỏa căng thẳng, gắn kết tình cảm với gia đình, bạn bè và
+          tận hưởng những giây phút sảng khoái.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Nội Dung -->
+    <section id="content">
+      <div class="main-content">
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/entertainment/location1.png"
+              alt="Sun World Ha Long"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Sun World Ha Long Park</h3>
+            <p>
+              Địa chỉ: Đường Hạ Long, phường Bãi Cháy, thành phố Hạ Long, tỉnh
+              Quảng Ninh, Việt Nam. Quần thể du lịch giải trí Sun World Ha Long
+              là sản phẩm của Tập đoàn Sun Group, hứa hẹn trở thành điểm vui
+              chơi lý tưởng và đẳng cấp hàng đầu Việt Nam.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/entertainment/location2.png"
+              alt="Vinpearl Royal City"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Vinpearl Park Royal City</h3>
+            <p>
+              Công viên nước trong nhà 4 mùa lớn nhất Việt Nam, rộng 24.000m²
+              tại VMM Royal City. Thiết kế theo chủ đề “Rừng rậm nhiệt đới” với
+              các trò chơi hiện đại đạt tiêu chuẩn quốc tế.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/entertainment/location3.png"
+              alt="Nam Cát Tiên"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Vườn Quốc gia Nam Cát Tiên</h3>
+            <p>
+              Khu bảo tồn thiên nhiên rộng hơn 71.000 ha, được UNESCO công nhận
+              là Khu dự trữ sinh quyển thế giới. Nổi bật với hệ sinh thái đa
+              dạng và nhiều loài động thực vật quý hiếm.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/entertainment/location4.png"
+              alt="Fansipan Legend"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Fansipan Legend</h3>
+            <p>
+              Quần thể du lịch tại Sa Pa với cáp treo đạt kỷ lục thế giới, đưa
+              du khách chinh phục đỉnh Fansipan (3.143m) trong 15 phút, cùng
+              nhiều điểm check-in độc đáo.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/entertainment/location5.png"
+              alt="Thung Lũng Tình Yêu"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Thung Lũng Tình Yêu & Đồi Mộng Mơ</h3>
+            <p>
+              Điểm đến thơ mộng tại Đà Lạt với hồ Đa Thiện, vườn hoa, cầu khóa
+              tình yêu và khu giao lưu văn hóa Cồng Chiêng Tây Nguyên.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <hr />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Về chúng tôi</h2>
+            <p>
+              Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Liên hệ</h2>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>Điện thoại: (+84) 99860345</p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>&copy; 2025 Bản quyền thuộc về tổ 1</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      //load
+      const loaderContainer = document.querySelector(".loader-container");
+
+      window.addEventListener("load", () => {
+        // Đợi 1 giây trước khi ẩn
+        setTimeout(() => {
+          loaderContainer.classList.add("unactive");
+        }, 500);
+      });
+    </script>
+  </body>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

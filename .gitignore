@@ -1,0 +1,4 @@
+video/
+*.tmp.mp4
+*.compressed.mp4
+*_new.mp4

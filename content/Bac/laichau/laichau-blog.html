@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lai Châu</title>
+  </head>
+  <body>
+    <!-- menu -->
+    <div id="wrapper">
+      <header>
+        <div class="menu container">
+          <a
+            href="/Around_VN_With_HCT_project/interface/main_interface.html"
+            class="logo"
+            >TRAVEL AROUND VN</a
+          >
+          <div class="information">
+            <ul id="main-menu">
+              <li>
+                <a
+                  class="active"
+                  href="/Around_VN_With_HCT_project/content/Bac/laichau/laichau-content.html"
+                  >THÔNG TIN</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Bac/laichau/laichau-blog.html"
+                  >BLOG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Bac/laichau/laichau-booking.html"
+                  >BOOKING</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!--Nhạc-->
+      <div class="music-icon">
+        <i class="fa-solid fa-music"></i>
+      </div>
+
+      <!-- Modal điều khiển nhạc -->
+      <div class="music-modal">
+        <div class="modal-content">
+          <span class="close-btn">×</span>
+          <div class="music-info">
+            <span class="song-title">Tên bài hát</span>
+            <div class="wave-animation"></div>
+          </div>
+          <div class="controls">
+            <button class="control-btn prev-btn">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="control-btn play-pause-btn">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="control-btn next-btn">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+            <input
+              type="range"
+              class="volume-slider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio element ẩn -->
+      <audio id="background-audio" autoplay loop></audio>
+
+      <!-- banner -->
+      <div class="banner">
+        <img
+          src="/Around_VN_With_HCT_project/image/content/banner/blog-banner.jpg"
+          alt="Lai Châu Blog Banner"
+        />
+      </div>
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Blog</h1>
+      <div class="first-content">
+        <p>
+          Chúng tôi sẽ đưa bạn qua những cung đường uốn lượn giữa núi rừng Tây
+          Bắc, nơi mây vờn đỉnh núi và những bản làng ẩn mình trong sương. Bạn
+          sẽ được thưởng thức những món ăn đậm đà hương vị núi rừng như thắng
+          cố, lợn cắp nách nướng than hồng và nhâm nhi chén rượu ngô thơm nồng,
+          tận hưởng không gian văn hóa đặc sắc của đồng bào Thái, Mông, Dao.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!--Blog-->
+    <section id="blog">
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/laichau/blog1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3>LAI CHÂU - KHÁM PHÁ VÙNG ĐẤT TẮNG MÂY</h3>
+          <p>
+            Lai Châu không chỉ hấp dẫn với những cung đường đèo uốn lượn và cảnh
+            quan hùng vĩ mà còn là vùng đất của bản sắc văn hóa độc đáo.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Hãy thử một lần chinh phục đỉnh Pu Ta Leng, săn mây trên đèo Ô Quy
+            Hồ hay khám phá động Pu Sam Cáp kỳ vĩ. Đến đây, du khách không chỉ
+            được chiêm ngưỡng thiên nhiên tuyệt đẹp mà còn có cơ hội trải nghiệm
+            những phong tục tập quán của đồng bào Thái, Dao, H'Mông. Hãy đặt
+            chân đến Lai Châu để cảm nhận hơi thở núi rừng và tận hưởng nét đẹp
+            hoang sơ của vùng Tây Bắc!
+          </div>
+        </div>
+        <h2>22/02</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/laichau/blog2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3>CHINH PHỤC Ô QUY HỒ – MỘT TRONG TỨ ĐẠI ĐÈO VIỆT NAM</h3>
+          <p>
+            Đèo Ô Quy Hồ – con đèo dài nhất và được mệnh danh là một trong "tứ
+            đại đèo" của Việt Nam, mang đến trải nghiệm ngoạn mục cho những tín
+            đồ đam mê phượt.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Hành trình chinh phục cung đường đèo đầy thử thách nhưng đẹp đến
+            nghẹt thở. Ngắm bình minh và hoàng hôn trên đỉnh đèo Ô Quy Hồ. Trải
+            nghiệm cảm giác phiêu lưu với những khúc cua gấp khúc bên vách núi.
+            Thưởng thức đặc sản thắng cố, lợn cắp nách và nhâm nhi ly rượu ngô
+            nồng nàn.
+          </div>
+        </div>
+        <h2>21/09</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/laichau/blog3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3>BẢN SÌN HỒ – NƠI MÂY VỜN TRÊN NÚI</h3>
+          <p>
+            Sìn Hồ – vùng đất còn nguyên vẻ đẹp hoang sơ, được ví như "nóc nhà"
+            của Lai Châu với khí hậu mát mẻ quanh năm và cảnh sắc thiên nhiên
+            hùng vĩ.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Dạo quanh những bản làng yên bình, tìm hiểu đời sống của đồng bào
+            Dao, Thái. Tận hưởng không khí trong lành, sương mù bao phủ tạo nên
+            khung cảnh huyền ảo. Tham quan chợ phiên Sìn Hồ – nơi hội tụ nét văn
+            hóa vùng cao. Check-in các điểm đến tuyệt đẹp như hang động Tiên
+            Sơn, đồi chè cổ thụ.
+          </div>
+        </div>
+        <h2>15/06</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/laichau/blog4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3>KHÁM PHÁ CHỢ PHIÊN LAI CHÂU – NÉT ĐẸP VĂN HÓA VÙNG CAO</h3>
+          <p>
+            Chợ phiên Lai Châu là nơi phản ánh chân thực nhất đời sống sinh
+            hoạt và nét đẹp văn hóa của đồng bào dân tộc vùng cao Tây Bắc
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Những phiên chợ độc đáo của người Mông, Dao, Thái diễn ra hàng tuần.
+            Không gian rực rỡ sắc màu với những bộ trang phục thổ cẩm truyền
+            thống. Thưởng thức các món ăn đặc sản như thắng cố, mèn mén, xôi ngũ
+            sắc. Gặp gỡ và trò chuyện với người dân bản địa để hiểu hơn về cuộc
+            sống vùng cao.
+          </div>
+        </div>
+        <h2>09/03</h2>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              Chúng tôi mang sứ mệnh giới thiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>
+              Điện thoại:
+              <ul>
+                <li>(+84) 79439905</li>
+                <li>(+84) 99860345</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>© 2024 [Tên công ty]. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $("header").addClass("sticky");
+        } else {
+          $("header").removeClass("sticky");
+        }
+      });
+    });
+
+    //ẩn nội dung trong blog
+    const clickContents = document.querySelectorAll(".click-content");
+    const hiddenContents = document.querySelectorAll(".hidden-content");
+
+    clickContents.forEach((clickContent, index) => {
+      clickContent.addEventListener("click", () => {
+        if (
+          hiddenContents[index].style.display === "none" ||
+          hiddenContents[index].style.display === ""
+        ) {
+          hiddenContents[index].style.display = "block";
+        } else {
+          hiddenContents[index].style.display = "none";
+        }
+      });
+    });
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

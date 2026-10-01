@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khám Phá Hành Trình Du Lịch</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/interface/tour-style.css"
+    />
+    <!-- liên kết với file font awesome để thêm icon-->
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu container">
+        <a
+          href="/Around_VN_With_HCT_project/interface/main_interface.html"
+          class="logo"
+          >TRAVEL AROUND VN</a
+        >
+        <nav class="information">
+          <ul id="main-menu">
+            <li>
+              <a href="#" class="active">THÔNG TIN</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Nhạc-->
+
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <div class="container">
+      <!-- Tour Hợp -->
+      <section class="tour-combo">
+        <h2>Tour Ghép Đặc Biệt</h2>
+        <div class="tour-combo-grid">
+          <div class="combo-card">
+            <div class="slideshow">
+              <div class="slides">
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour1/tour1-1.jpg"
+                  class="slide"
+                  alt="Phú Quốc"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour1/tour1-2.jpg"
+                  class="slide"
+                  alt="Đà Nẵng"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour1/tour1-3.jpg"
+                  class="slide"
+                  alt="Hạ Long"
+                />
+              </div>
+            </div>
+            <div class="combo-content">
+              <h3 class="combo-title">
+                Tour Phú Quốc – Đà Nẵng – Hà Nội – Hạ Long – Sapa (9 ngày)
+              </h3>
+              <p class="combo-desc">
+                Hành trình khám phá các điểm đến nổi tiếng như Phú Quốc, Đà
+                Nẵng, Hà Nội, Hạ Long và Sapa trong 9 ngày. Giá tour bao gồm vé
+                máy bay 4 chặng (TP.HCM - Phú Quốc, Phú Quốc – Đà Nẵng, Đà Nẵng
+                – Hà Nội và Hà Nội – TP.HCM), khách sạn, ăn uống và các dịch vụ
+                khác. Giá cụ thể có thể thay đổi tùy theo ngày khởi hành và hãng
+                hàng không.
+              </p>
+              <div class="combo-footer">
+                <span class="combo-price">Giá: Liên hệ</span>
+                <a href="#" class="combo-cta">Đặt Ngay</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="combo-card">
+            <div class="slideshow">
+              <div class="slides">
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour2/tour2-1.jpg"
+                  class="slide"
+                  alt="Hà Nội"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour2/tour2-2.jpg"
+                  class="slide"
+                  alt="Hạ Long"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour2/tour2-3.jpg"
+                  class="slide"
+                  alt="Phong Nha"
+                />
+              </div>
+            </div>
+            <div class="combo-content">
+              <h3 class="combo-title">
+                Tour Hà Nội – Hạ Long – Đà Nẵng – Hội An – Huế – Phong Nha (8
+                ngày 7 đêm)
+              </h3>
+              <p class="combo-desc">
+                Hành trình tham quan các di sản văn hóa và thiên nhiên miền
+                Trung và Bắc Việt Nam. Giá tour từ 8.200.000₫, khởi hành hàng
+                ngày từ TP.HCM.
+              </p>
+              <div class="combo-footer">
+                <span class="combo-price">Giá: Từ 8.200.000₫</span>
+                <a href="#" class="combo-cta">Đặt Ngay</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="combo-card">
+            <div class="slideshow">
+              <div class="slides">
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour3/tour3-1.jpg"
+                  class="slide"
+                  alt="Nha Trang"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour3/tour3-2.jpg"
+                  class="slide"
+                  alt="Sapa"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour3/tour3-3.jpg"
+                  class="slide"
+                  alt="Hạ Long"
+                />
+              </div>
+            </div>
+            <div class="combo-content">
+              <h3 class="combo-title">
+                Tour Sài Gòn – Nha Trang – Đà Nẵng – Hội An – Huế – Quảng Bình –
+                Sapa – Hạ Long (10 ngày)
+              </h3>
+              <p class="combo-desc">
+                Khám phá các điểm đến nổi tiếng từ Nam ra Bắc trong 10 ngày. Giá
+                tour khoảng 18.990.000₫, khởi hành từ TP.HCM.
+              </p>
+              <div class="combo-footer">
+                <span class="combo-price">Giá: 18.990.000₫</span>
+                <a href="#" class="combo-cta">Đặt Ngay</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="combo-card">
+            <div class="slideshow">
+              <div class="slides">
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour4/tour4-1.jpg"
+                  class="slide"
+                  alt="Mai Châu"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour4/tour4-2.jpg"
+                  class="slide"
+                  alt="Tràng An"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour4/tour4-3.jpg"
+                  class="slide"
+                  alt="Ninh Bình"
+                />
+              </div>
+            </div>
+            <div class="combo-content">
+              <h3 class="combo-title">
+                Tour Hà Nội – Mai Châu – Mộc Châu – Tràng An – Bái Đính – Ninh
+                Bình (4 ngày 3 đêm)
+              </h3>
+              <p class="combo-desc">
+                Khám phá vẻ đẹp thiên nhiên và văn hóa của vùng Tây Bắc và Ninh
+                Bình. Giá tour khoảng 8.599.000₫, khởi hành vào các tháng 4 và 5
+                năm 2025.
+              </p>
+              <div class="combo-footer">
+                <span class="combo-price">Giá: 8.599.000₫</span>
+                <a href="#" class="combo-cta">Đặt Ngay</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="combo-card">
+            <div class="slideshow">
+              <div class="slides">
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour5/tour5-1.jpg"
+                  class="slide"
+                  alt="Quy Nhơn"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour5/tour5-2.jpg"
+                  class="slide"
+                  alt="Phú Yên"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour5/tour5-3.jpg"
+                  class="slide"
+                  alt="Kỳ Co"
+                />
+              </div>
+            </div>
+            <div class="combo-content">
+              <h3 class="combo-title">
+                Tour Quy Nhơn – Phú Yên – Mũi Điện – Gành Đá Dĩa – Kỳ Co – Eo
+                Gió (4 ngày 3 đêm)
+              </h3>
+              <p class="combo-desc">
+                Tham quan các bãi biển đẹp và danh lam thắng cảnh của Quy Nhơn
+                và Phú Yên. Giá tour khoảng 3.800.000₫, khởi hành từ Hà Nội.
+              </p>
+              <div class="combo-footer">
+                <span class="combo-price">Giá: 3.800.000₫</span>
+                <a href="#" class="combo-cta">Đặt Ngay</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="combo-card">
+            <div class="slideshow">
+              <div class="slides">
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour6/tour6-1.jpg"
+                  class="slide"
+                  alt="Sapa"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour6/tour6-2.jpg"
+                  class="slide"
+                  alt="Sapa 2"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour6/tour6-3.jpg"
+                  class="slide"
+                  alt="Sapa 3"
+                />
+              </div>
+            </div>
+            <div class="combo-content">
+              <h3 class="combo-title">
+                Tour Hồ Chí Minh – Sapa (3 ngày 2 đêm)
+              </h3>
+              <p class="combo-desc">
+                Khởi hành từ TP.HCM, giá khoảng 9.190.000 VNĐ.
+              </p>
+              <div class="combo-footer">
+                <span class="combo-price">Giá: 9.190.000₫</span>
+                <a href="#" class="combo-cta">Đặt Ngay</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="combo-card">
+            <div class="slideshow">
+              <div class="slides">
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour7/tour7-1.jpg"
+                  class="slide"
+                  alt="Tây Bắc"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour7/tour7-2.jpg"
+                  class="slide"
+                  alt="Sa Pa"
+                />
+                <img
+                  src="/Around_VN_With_HCT_project/image/tour/aggregate/tour7/tour7-3.jpg"
+                  class="slide"
+                  alt="Mộc Châu"
+                />
+              </div>
+            </div>
+            <div class="combo-content">
+              <h3 class="combo-title">Tour Tây Bắc (5 ngày 4 đêm)</h3>
+              <p class="combo-desc">
+                Tham quan Sa Pa, Lai Châu, Điện Biên, Sơn La và Mộc Châu. Giá
+                khoảng 9.780.000 VNĐ.
+              </p>
+              <div class="combo-footer">
+                <span class="combo-price">Giá: 9.780.000₫</span>
+                <a href="#" class="combo-cta">Đặt Ngay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tour Đơn -->
+      <section class="tour-single">
+        <h2>Tour Đơn Lẻ Độc Đáo</h2>
+        <div class="tour-single-grid">
+          <div class="single-card">
+            <img
+              src="/Around_VN_With_HCT_project/image/tour/single/single1.jpg"
+              class="single-image"
+              alt="Sapa"
+            />
+            <div class="single-content">
+              <h3 class="single-title">Tour Sapa 3 ngày 2 đêm</h3>
+              <p class="single-desc">
+                Khám phá thị trấn Sapa, tham quan các bản làng dân tộc và chinh
+                phục đỉnh Fansipan. Khởi hành từ Hà Nội.
+              </p>
+              <div class="single-footer">
+                <span class="single-price">Giá: 2.390.000₫</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-card">
+            <img
+              src="/Around_VN_With_HCT_project/image/tour/single/single2.jpg"
+              class="single-image"
+              alt="Hạ Long"
+            />
+            <div class="single-content">
+              <h3 class="single-title">Tour Hạ Long 2 ngày 1 đêm</h3>
+              <p class="single-desc">
+                Tham quan vịnh Hạ Long, ngủ đêm trên du thuyền hoặc khách sạn.
+                Khởi hành từ Hà Nội.
+              </p>
+              <div class="single-footer">
+                <span class="single-price">Giá: 1.950.000₫</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-card">
+            <img
+              src="/Around_VN_With_HCT_project/image/tour/single/single3.jpg"
+              class="single-image"
+              alt="Nha Trang"
+            />
+            <div class="single-content">
+              <h3 class="single-title">Tour Nha Trang (3 ngày 3 đêm)</h3>
+              <p class="single-desc">Khởi hành từ TP.HCM.</p>
+              <div class="single-footer">
+                <span class="single-price">Giá: 3.690.000₫</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-card">
+            <img
+              src="/Around_VN_With_HCT_project/image/tour/single/single4.jpg"
+              class="single-image"
+              alt="Đà Lạt"
+            />
+            <div class="single-content">
+              <h3 class="single-title">Tour Đà Lạt (3 ngày 3 đêm)</h3>
+              <p class="single-desc">Khởi hành từ TP.HCM.</p>
+              <div class="single-footer">
+                <span class="single-price">Giá: 3.590.000₫</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-card">
+            <img
+              src="/Around_VN_With_HCT_project/image/tour/single/single5.jpg"
+              class="single-image"
+              alt="Mộc Châu"
+            />
+            <div class="single-content">
+              <h3 class="single-title">Tour Mộc Châu (4 ngày 3 đêm)</h3>
+              <p class="single-desc">
+                Tham quan thác Dải Yếm, Happy Land và Mocha Hill.
+              </p>
+              <div class="single-footer">
+                <span class="single-price">Giá: 6.180.000₫</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-card">
+            <img
+              src="/Around_VN_With_HCT_project/image/tour/single/single6.jpg"
+              class="single-image"
+              alt="Tà Xùa"
+            />
+            <div class="single-content">
+              <h3 class="single-title">Tour Tà Xùa (4 ngày 3 đêm)</h3>
+              <p class="single-desc">
+                Săn mây chốn bồng lai, khởi hành từ TP.HCM.
+              </p>
+              <div class="single-footer">
+                <span class="single-price">Giá: 6.280.000₫</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-card">
+            <img
+              src="/Around_VN_With_HCT_project/image/tour/single/single7.jpg"
+              class="single-image"
+              alt="Phú Quốc"
+            />
+            <div class="single-content">
+              <h3 class="single-title">Tour Phú Quốc</h3>
+              <p class="single-desc">
+                Khám phá đảo ngọc với các bãi biển đẹp và hoạt động lặn ngắm san
+                hô. Giá và thời gian tùy thuộc vào lịch trình cụ thể.
+              </p>
+              <div class="single-footer">
+                <span class="single-price">Giá: Liên hệ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--footer-->
+    <hr />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Về chúng tôi</h3>
+            <p>
+              Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>Điện thoại: (+84) 99860345</p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>&copy; 2025 Bản quyền thuộc về tổ 1</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      //load
+      const loaderContainer = document.querySelector(".loader-container");
+
+      window.addEventListener("load", () => {
+        // Đợi 1 giây trước khi ẩn
+        setTimeout(() => {
+          loaderContainer.classList.add("unactive");
+        }, 500);
+      });
+    </script>
+  </body>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tây Ninh</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- menu -->
+    <div id="wrapper">
+      <header>
+        <div class="menu container">
+          <a
+            href="/Around_VN_With_HCT_project/interface/main_interface.html"
+            class="logo"
+            >TRAVEL AROUND VN</a
+          >
+          <div class="information">
+            <ul id="main-menu">
+              <li>
+                <a
+                  class="active"
+                  href="/Around_VN_With_HCT_project/content/Nam/tayninh/tayninh-content.html"
+                  >THÔNG TIN</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Nam/tayninh/tayninh-blog.html"
+                  >BLOG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Nam/tayninh/tayninh-booking.html"
+                  >BOOKING</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!--Nhạc-->
+      <div class="music-icon">
+        <i class="fa-solid fa-music"></i>
+      </div>
+
+      <!-- Modal điều khiển nhạc -->
+      <div class="music-modal">
+        <div class="modal-content">
+          <span class="close-btn">×</span>
+          <div class="music-info">
+            <span class="song-title">Tên bài hát</span>
+            <div class="wave-animation"></div>
+          </div>
+          <div class="controls">
+            <button class="control-btn prev-btn">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="control-btn play-pause-btn">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="control-btn next-btn">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+            <input
+              type="range"
+              class="volume-slider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio element ẩn -->
+      <audio id="background-audio" autoplay loop></audio>
+
+      <!-- banner -->
+      <div class="banner">
+        <img
+          src="/Around_VN_With_HCT_project/image/content/banner/blog-banner.jpg"
+          alt="Tây Ninh Blog Banner"
+        />
+      </div>
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Blog</h1>
+      <div class="first-content">
+        <p>
+          Chúng tôi sẽ đưa bạn qua những cung đường bình yên, nơi Núi Bà Đen
+          sừng sững giữa mây trời và Tòa Thánh Cao Đài rực rỡ sắc màu, biểu tượng
+          độc đáo của vùng đất này. Bạn sẽ được thưởng thức bánh tráng phơi
+          sương Trảng Bàng trứ danh, khám phá hồ Dầu Tiếng thơ mộng và tận hưởng
+          không khí trong lành giữa thiên nhiên hoang sơ. Dù bạn muốn thư giãn
+          trong khách sạn tiện nghi hay tìm kiếm trải nghiệm gần gũi thiên nhiên
+          tại homestay mộc mạc, Tây Ninh luôn sẵn sàng chào đón bạn.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!--Blog-->
+    <section id="blog">
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/blog1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3>Chợ Đêm Tây Ninh: Nơi Hội Tụ Hương Vị Và Văn Hóa Địa Phương</h3>
+          <p>
+            Khi mặt trời lặn, chợ đêm Tây Ninh trở thành điểm đến nhộn nhịp với
+            những gian hàng rực rỡ ánh đèn, bày bán đủ loại đặc sản và món ăn
+            đường phố hấp dẫn.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Dạo quanh chợ đêm Tây Ninh (gần công viên 30/4), bạn sẽ thấy những
+            quán hàng bán bánh tráng nướng, bún nước sâm, bò nướng lụi thơm lừng,
+            thu hút thực khách. Các sạp quần áo, đồ lưu niệm, phụ kiện giá rẻ
+            cũng tạo nên không khí sôi động, phản ánh rõ nét văn hóa mua sắm của
+            người dân địa phương. Đây không chỉ là nơi để ăn uống mà còn là
+            không gian giao lưu văn hóa, nơi du khách có thể trò chuyện với
+            người bán hàng thân thiện, tìm hiểu về lối sống của người Tây Ninh.
+            Một buổi tối lang thang chợ đêm chắc chắn sẽ mang lại trải nghiệm
+            thú vị và đáng nhớ.
+          </div>
+        </div>
+        <h2>22/02</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/blog2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3>Hồ Dầu Tiếng: Thiên Đường Bình Yên Giữa Lòng Tây Ninh</h3>
+          <p>
+            Không chỉ là hồ nước nhân tạo lớn nhất Việt Nam, Hồ Dầu Tiếng còn là
+            điểm đến lý tưởng để thư giãn, ngắm cảnh và tận hưởng thiên nhiên
+            yên bình.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Với mặt nước trong xanh, bờ cát mịn và những hàng cây xanh rì, Hồ
+            Dầu Tiếng là điểm dừng chân tuyệt vời cho những ai muốn rời xa phố
+            thị ồn ào. Du khách có thể cắm trại, câu cá, chèo thuyền hoặc đơn
+            giản là ngắm hoàng hôn lãng mạn trên mặt hồ. Một số hòn đảo nhỏ như
+            Đảo Nhím, Đảo Xỉn nằm giữa lòng hồ là nơi sinh sống của nhiều loài
+            chim, tạo nên khung cảnh hoang sơ đầy cuốn hút. Đây cũng là điểm
+            check-in lý tưởng cho những ai yêu thích nhiếp ảnh và khám phá thiên
+            nhiên.
+          </div>
+        </div>
+        <h2>15/09</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/blog3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3>Tòa Thánh Cao Đài: Kiệt Tác Kiến Trúc Và Trung Tâm Tôn Giáo</h3>
+          <p>
+            Là công trình tôn giáo lớn nhất của Đạo Cao Đài, Tòa Thánh Tây Ninh
+            không chỉ mang giá trị tâm linh mà còn gây ấn tượng mạnh với kiến
+            trúc độc đáo, kết hợp giữa phong cách Á – Âu.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Bước vào Tòa Thánh Cao Đài, bạn sẽ bị choáng ngợp bởi các cột rồng
+            uốn lượn, mái vòm chạm khắc tinh xảo, những bức tranh đầy màu sắc
+            tái hiện triết lý của Đạo Cao Đài. Đặc biệt, vào các buổi lễ chính
+            (như lúc 12h trưa), du khách có thể tận mắt chứng kiến những nghi
+            thức trang nghiêm, tạo nên một không gian huyền bí và linh thiêng.
+            Không chỉ là nơi hành hương, Tòa Thánh còn là điểm đến văn hóa quan
+            trọng, giúp du khách hiểu thêm về một tôn giáo độc đáo chỉ có ở Việt
+            Nam.
+          </div>
+        </div>
+        <h2>26/06</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/blog4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3>Khu Du Lịch Long Điền Sơn: Thiên Đường Giải Trí Giữa Lòng Tây Ninh</h3>
+          <p>
+            Nếu bạn muốn tìm một nơi vui chơi, thư giãn sau những chuyến đi khám
+            phá thiên nhiên, Khu du lịch Long Điền Sơn chính là lựa chọn lý
+            tưởng
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Nằm cách trung tâm Tây Ninh không xa, Long Điền Sơn có công viên
+            nước, hồ bơi, khu vui chơi thiếu nhi, trò chơi mạo hiểm như đu dây,
+            trượt nước, đạp vịt... Khu du lịch này còn có những khu vườn xanh
+            mát, quán ăn ven hồ phù hợp để nghỉ ngơi và tận hưởng không khí
+            trong lành. Đây là điểm đến thích hợp cho gia đình, nhóm bạn trẻ
+            hoặc những ai muốn kết hợp du lịch khám phá và nghỉ dưỡng. Một ngày
+            tại Long Điền Sơn chắc chắn sẽ mang lại nhiều niềm vui và kỷ niệm
+            khó quên.
+          </div>
+        </div>
+        <h2>29/03</h2>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              Chúng tôi mang sứ mệnh giới thiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>
+              Điện thoại:
+              <ul>
+                <li>(+84) 79439905</li>
+                <li>(+84) 99860345</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>© 2024 [Tên công ty]. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $("header").addClass("sticky");
+        } else {
+          $("header").removeClass("sticky");
+        }
+      });
+    });
+
+    //ẩn nội dung trong blog
+    const clickContents = document.querySelectorAll(".click-content");
+    const hiddenContents = document.querySelectorAll(".hidden-content");
+
+    clickContents.forEach((clickContent, index) => {
+      clickContent.addEventListener("click", () => {
+        if (
+          hiddenContents[index].style.display === "none" ||
+          hiddenContents[index].style.display === ""
+        ) {
+          hiddenContents[index].style.display = "block";
+        } else {
+          hiddenContents[index].style.display = "none";
+        }
+      });
+    });
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

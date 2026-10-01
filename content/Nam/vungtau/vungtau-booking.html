@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bà Rịa Vũng Tàu</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- menu -->
+    <div id="wrapper">
+      <header>
+        <div class="menu container">
+          <a
+            href="/Around_VN_With_HCT_project/interface/main_interface.html"
+            class="logo"
+            >TRAVEL AROUND VN</a
+          >
+          <div class="information">
+            <ul id="main-menu">
+              <li>
+                <a
+                  class="active"
+                  href="/Around_VN_With_HCT_project/content/Nam/vungtau/vungtau-content.html"
+                  >THÔNG TIN</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Nam/vungtau/vungtau-blog.html"
+                  >BLOG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Nam/vungtau/vungtau-booking.html"
+                  >BOOKING</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!--Nhạc-->
+      <div class="music-icon">
+        <i class="fa-solid fa-music"></i>
+      </div>
+
+      <!-- Modal điều khiển nhạc -->
+      <div class="music-modal">
+        <div class="modal-content">
+          <span class="close-btn">×</span>
+          <div class="music-info">
+            <span class="song-title">Tên bài hát</span>
+            <div class="wave-animation"></div>
+          </div>
+          <div class="controls">
+            <button class="control-btn prev-btn">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="control-btn play-pause-btn">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="control-btn next-btn">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+            <input
+              type="range"
+              class="volume-slider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio element ẩn -->
+      <audio id="background-audio" autoplay loop></audio>
+
+      <!-- banner -->
+      <div class="banner">
+        <img
+          src="/Around_VN_With_HCT_project/image/content/banner/booking-banner.jpg"
+          alt="Bà Rịa Vũng Tàu Booking Banner"
+        />
+      </div>
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Booking</h1>
+      <div class="first-content">
+        <p>
+          Vũng Tàu, thành phố biển nổi tiếng của Việt Nam, không chỉ thu hút du
+          khách bởi những bãi biển tuyệt đẹp mà còn bởi không khí sôi động, nền
+          ẩm thực phong phú và nhiều điểm tham quan hấp dẫn. Với sự phát triển
+          của ngành du lịch và dịch vụ, việc đặt phòng (booking) ở Vũng Tàu trở
+          nên dễ dàng và đa dạng hơn bao giờ hết, mang đến nhiều lựa chọn phù
+          hợp cho mọi nhu cầu, từ khách sạn sang trọng đến homestay ấm cúng.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!--Nội Dung-->
+    <div class="hotel">
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/booking1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.020241353105!2d105.80972827509314!3d21.031876080618215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab6cecd4ed9d%3A0xaa0bbd53d1491c7a!2sLotte%20Hotel%20Hanoi!5e0!3m2!1svi!2s!4v1740761661748!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>The IMPERIAL Vũng Tàu – Đẳng Cấp Hoàng Gia Bên Biển</h3>
+          <p>
+            Là khách sạn 5 sao mang phong cách hoàng gia châu Âu, The IMPERIAL
+            Vũng Tàu tọa lạc ngay bãi biển Thùy Vân, mang đến không gian sang
+            trọng với kiến trúc cổ điển, hồ bơi đẳng cấp và dịch vụ chuẩn quốc
+            tế. Với tầm nhìn hướng biển tuyệt đẹp, đây là điểm dừng chân lý
+            tưởng cho những ai muốn tận hưởng kỳ nghỉ xa hoa giữa lòng phố biển.
+          </p>
+        </div>
+      </div>
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/booking2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1817513153896!2d105.85380007509295!3d21.02541248062307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abeb98f8b54d%3A0x90d6982234a65f25!2sSofitel%20Legend%20Metropole%20Hotel!5e0!3m2!1svi!2s!4v1740763407487!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>Grand Hotel Vũng Tàu – Dấu Ấn Lịch Sử Giữa Phố Biển</h3>
+          <p>
+            Là một trong những khách sạn lâu đời nhất Vũng Tàu, Grand Hotel mang
+            đậm nét kiến trúc Pháp cổ điển, gợi nhớ về thời kỳ vàng son của
+            thành phố biển. Tọa lạc trên đường Trần Hưng Đạo, khách sạn không
+            chỉ cung cấp dịch vụ sang trọng mà còn lưu giữ những giá trị lịch
+            sử qua từng góc nhỏ, tạo nên một không gian hoài niệm nhưng vẫn đầy
+            đủ tiện nghi hiện đại.
+          </p>
+        </div>
+      </div>
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/booking3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3739992000997!2d105.83931867509276!3d21.017716280628893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8f9af04521%3A0xdccfaebef264a0b1!2sHotel%20du%20Parc%20Hanoi!5e0!3m2!1svi!2s!4v1740763466259!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>Palace Hotel Vũng Tàu – Biểu Tượng Sang Trọng Giữa Lòng Thành Phố</h3>
+          <p>
+            Tọa lạc ngay trung tâm thành phố, Palace Hotel Vũng Tàu là một trong
+            những khách sạn lâu đời và sang trọng bậc nhất nơi đây. Với vị trí
+            đắc địa trên đường Nguyễn Trãi, khách sạn mang đến không gian nghỉ
+            dưỡng tiện nghi, hồ bơi ngoài trời và tầm nhìn tuyệt đẹp ra biển.
+            Đây là lựa chọn lý tưởng cho những ai muốn tận hưởng sự thoải mái và
+            dịch vụ cao cấp giữa phố biển nhộn nhịp.
+          </p>
+        </div>
+      </div>
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/booking4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1118817595084!2d105.8482912750931!3d21.028208880621065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab952308667b%3A0xdb99ed2e3e265856!2sApricot%20Hotel!5e0!3m2!1svi!2s!4v1740763500081!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>Rex Hotel Vũng Tàu – Nét Cổ Điển Bên Bờ Biển</h3>
+          <p>
+            Nằm dọc con đường ven biển Thùy Vân, Rex Hotel Vũng Tàu mang phong
+            cách kiến trúc cổ điển kết hợp hiện đại, tạo nên không gian nghỉ
+            dưỡng ấm cúng và sang trọng. Với tầm nhìn hướng biển cùng dịch vụ
+            tiện nghi, khách sạn này là điểm dừng chân lý tưởng cho du khách
+            muốn tận hưởng không khí trong lành và những khoảnh khắc thư giãn
+            tuyệt vời tại Vũng Tàu
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>
+              Điện thoại:
+              <ul>
+                <li>(+84) 79439905</li>
+                <li>(+84) 99860345</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>© 2024 [Tên công ty]. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $("header").addClass("sticky");
+        } else {
+          $("header").removeClass("sticky");
+        }
+      });
+    });
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

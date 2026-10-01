@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đồng Nai</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="menu container">
+        <a
+          href="/Around_VN_With_HCT_project/interface/main_interface.html"
+          class="logo"
+          >TRAVEL AROUND VN</a
+        >
+        <nav class="information">
+          <ul id="main-menu">
+            <li>
+              <a
+                class="active"
+                href="/Around_VN_With_HCT_project/content/Nam/dongnai/dongnai-content.html"
+                >THÔNG TIN</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Around_VN_With_HCT_project/content/Nam/dongnai/dongnai-blog.html"
+                >BLOG</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Around_VN_With_HCT_project/content/Nam/dongnai/dongnai-booking.html"
+                >BOOKING</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Nhạc-->
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+    <!-- Banner -->
+    <div class="banner">
+      <img
+        src="/Around_VN_With_HCT_project/image/content/banner/content-banner.jpg"
+        alt="Đồng Nai Banner"
+      />
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Đồng Nai</h1>
+      <div class="first-content">
+        <p>
+          Đồng Nai là một tỉnh thuộc vùng Đông Nam Bộ, Việt Nam. Đây là địa
+          phương đông dân thứ 5 cả nước sau Thành phố Hồ Chí Minh, Hà Nội, Thanh
+          Hóa và Nghệ An. <br />• Biệt danh: Thủ phủ chôm chôm <br />• Vị trí:
+          Nam Bộ Việt Nam <br />• Diện Tích: 5.863,62 km² <br />• Dân Số: 3,311
+          triệu người
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Slogan -->
+    <div class="slogan" data-tilt>
+      <img
+        src="/Around_VN_With_HCT_project/image/content/Nam/Dongnai/logo1.jpg"
+        alt=""
+      />
+    </div>
+    <h2>
+      Đồng Nai gạo trắng nước trong <br />Ai đi đến đó lòng không muốn về
+    </h2>
+
+    <!-- Nội Dung -->
+    <section class="content">
+      <div class="content-gallery">
+        <div class="gallery-grid">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content1.jpg"
+            alt="Hình 1"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content2.jpg"
+            alt="Hình 2"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content3.jpg"
+            alt="Hình 3"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content4.jpg"
+            alt="Hình 4"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content5.jpg"
+            alt="Hình 5"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content6.jpg"
+            alt="Hình 6"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content7.jpg"
+            alt="Hình 7"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content8.jpg"
+            alt="Hình 8"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content9.jpg"
+            alt="Hình 9"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content10.jpg"
+            alt="Hình 10"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content11.jpg"
+            alt="Hình 11"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content12.jpg"
+            alt="Hình 12"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content13.jpg"
+            alt="Hình 13"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content14.jpg"
+            alt="Hình 14"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content15.jpg"
+            alt="Hình 15"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content16.jpg"
+            alt="Hình 16"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content17.jpg"
+            alt="Hình 17"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/dongnai/content18.jpg"
+            alt="Hình 18"
+          />
+        </div>
+      </div>
+      <div class="content-main">
+        <div class="content-sub">
+          <h3>
+            <i class="fa-solid fa-mountain-sun"></i> Phong cảnh – Sự giao thoa
+            giữa hiện đại và cổ kính
+          </h3>
+          <div class="sub-item">
+            <h5>Sự giao thoa giữa thiên nhiên và đô thị</h5>
+            <p>
+              Đồng Nai có nhiều khu công nghiệp lớn, nhưng vẫn giữ được những
+              vùng thiên nhiên rộng lớn như rừng Nam Cát Tiên, hồ Trị An, hay
+              thác Giang Điền. Điều này tạo nên sự kết hợp hài hòa giữa phát
+              triển kinh tế và bảo tồn thiên nhiên
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Sự hòa quyện giữa sông nước và rừng núi</h5>
+            <p>
+              Sông Đồng Nai trải dài, uốn lượn qua nhiều vùng, kết hợp với các
+              khu rừng, đồi núi, tạo nên cảnh quan đa dạng, phong phú. Hồ Trị An
+              là một ví dụ điển hình về sự kết hợp giữa sông nước và hệ sinh
+              thái rừng.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Sự giao thoa giữa văn hóa bản địa và hiện đại</h5>
+            <p>
+              Đồng Nai là nơi có nhiều dân tộc sinh sống, đặc biệt là người Chơ
+              Ro, Mạ, Kinh... Điều này tạo nên một nền văn hóa đa dạng, kết hợp
+              giữa truyền thống và hiện đại. Các lễ hội, ẩm thực, và kiến trúc
+              ở đây cũng mang đậm dấu ấn giao thoa này.
+            </p>
+          </div>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-bowl-rice"></i> Ẩm thực- Hương vị đậm đà bản sắc</h3>
+          <div class="sub-item">
+            <h5>Lẩu lá khổ qua rừng</h5>
+            <p>
+              Món lẩu độc đáo với vị đắng nhẹ của lá khổ qua rừng, kết hợp với
+              nước dùng ngọt thanh từ xương và thịt, thường ăn kèm với cá hoặc
+              thịt bò tái.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Gỏi cá Biên Hòa</h5>
+            <p>
+              Cá tươi sống (thường là cá trích, cá chép hoặc cá lóc) được tái
+              chanh, trộn với rau rừng và nước chấm đặc trưng, tạo nên hương vị
+              tươi ngon, hấp dẫn.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Bưởi Tân Triều</h5>
+            <p>
+              Bưởi có vị ngọt thanh, tép giòn và mọng nước, thường được dùng làm
+              món tráng miệng hoặc chế biến thành gỏi bưởi.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Heo mọi nướng</h5>
+            <p>
+              Thịt heo mọi (heo rừng nhỏ) được ướp gia vị và nướng trên than
+              hồng, giữ được độ mềm và vị ngọt tự nhiên
+            </p>
+          </div>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-font-awesome"></i> Văn hoá – Bản sắc</h3>
+          <div class="sub-item">
+            <h5>Văn hoá bản sắc – Con người dễ mến</h5>
+            <p>
+              Đồng Nai là vùng đất có bề dày lịch sử, văn hóa đa dạng với sự
+              giao thoa của nhiều dân tộc. Văn hóa nơi đây thể hiện qua các di
+              tích lịch sử như Văn miếu Trấn Biên, đền thờ Nguyễn Hữu Cảnh, các
+              lễ hội truyền thống và nghệ thuật dân gian như đờn ca tài tử. Ẩm
+              thực đặc trưng với các món như lẩu lá khổ qua rừng, gỏi cá Biên
+              Hòa, gà hấp bưởi. Con người Đồng Nai mang tính cách phóng khoáng,
+              hiếu khách, cần cù và sáng tạo, luôn đề cao giá trị gia đình và
+              cộng đồng. Đây là vùng đất giàu bản sắc, kết hợp hài hòa giữa
+              truyền thống và hiện đại.
+            </p>
+          </div>
+        </div>
+        <div class="content-sub">
+          <h3>
+            <i class="fa-solid fa-location-dot"></i> Địa điểm du lịch-Nơi chắc
+            chắn phải đến
+          </h3>
+          <div class="sub-item">
+            <h5>Thác Giang Điền</h5>
+            <p>
+              Một trong những điểm đến nổi tiếng nhất Đồng Nai, thác Giang
+              Điền mang đến khung cảnh thiên nhiên thơ mộng, không khí trong
+              lành và nhiều hoạt động dã ngoại thú vị.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Khu Du Lịch Bửu Long</h5>
+            <p>
+              Được ví như "Vịnh Hạ Long thu nhỏ" của miền Nam, Bửu Long có hồ
+              nước xanh trong, núi đá vôi và các công trình tâm linh như chùa
+              Bửu Phong.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Vườn Quốc Gia Cát Tiên</h5>
+            <p>
+              Di sản thiên nhiên thế giới với hệ sinh thái đa dạng, rừng nguyên
+              sinh và nhiều loài động vật quý hiếm, thích hợp cho những ai yêu
+              thích khám phá thiên nhiên.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Núi Chứa Chan</h5>
+            <p>
+              Ngọn núi cao thứ hai Nam Bộ, là điểm trekking hấp dẫn với cảnh đẹp
+              ngoạn mục và chùa Bửu Quang linh thiêng.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Làng Bưởi Tân Triều</h5>
+            <p>
+              Nổi tiếng với những vườn bưởi trĩu quả và các món ăn đặc sản chế
+              biến từ bưởi, đây là điểm đến lý tưởng cho du khách muốn trải
+              nghiệm không gian miệt vườn.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Khu Du Lịch Sinh Thái Vườn Xoài</h5>
+            <p>
+              Nơi lý tưởng để thư giãn cùng gia đình với không gian xanh mát,
+              sở thú mini và nhiều trò chơi giải trí như cưỡi voi, đạp vịt, chèo
+              thuyền kayak.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <hr />
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Về Chúng Tôi</h2>
+            <p>
+              Chúng tôi mang sứ mệnh giới thiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Liên hệ</h2>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>
+              Điện thoại:
+              <ul>
+                <li>(+84) 79439905</li>
+                <li>(+84) 99860345</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>© 2024 [Tên công ty]. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $("header").addClass("sticky");
+        } else {
+          $("header").removeClass("sticky");
+        }
+      });
+    });
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

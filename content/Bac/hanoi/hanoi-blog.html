@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hà Nội</title>
+  </head>
+  <body>
+    <!-- menu -->
+    <div id="wrapper">
+      <header>
+        <div class="menu container">
+          <a
+            href="/Around_VN_With_HCT_project/interface/main_interface.html"
+            class="logo"
+            >TRAVEL AROUND VN</a
+          >
+          <div class="information">
+            <ul id="main-menu">
+              <li>
+                <a
+                  class="active"
+                  href="/Around_VN_With_HCT_project/content/Bac/hanoi/hanoi-content.html"
+                  >THÔNG TIN</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Bac/hanoi/hanoi-blog.html"
+                  >BLOG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Bac/hanoi/hanoi-booking.html"
+                  >BOOKING</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!--Nhạc-->
+
+      <div class="music-icon">
+        <i class="fa-solid fa-music"></i>
+      </div>
+
+      <!-- Modal điều khiển nhạc -->
+
+      <div class="music-modal">
+        <div class="modal-content">
+          <span class="close-btn">×</span>
+          <div class="music-info">
+            <span class="song-title">Tên bài hát</span>
+            <div class="wave-animation"></div>
+          </div>
+          <div class="controls">
+            <button class="control-btn prev-btn">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="control-btn play-pause-btn">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="control-btn next-btn">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+            <input
+              type="range"
+              class="volume-slider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio element ẩn -->
+      <audio id="background-audio" autoplay loop></audio>
+
+      <!-- banner -->
+      <div class="banner">
+        <img
+          src="/Around_VN_With_HCT_project/image/content/banner/blog-banner.jpg"
+        />
+      </div>
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Blog</h1>
+      <div class="first-content">
+        <!--Đoạn khái quát đầu của blog - cần sửa-->
+        <p>
+          Chúng tôi sẽ đưa bạn qua những con phố cổ kính, nơi thời gian dường
+          như ngừng trôi, để bạn cảm nhận được vẻ đẹp trầm mặc của Hà Nội. Bạn
+          sẽ được thưởng thức những món ăn đặc trưng, từ phở bò thơm ngon đến
+          chả cá Lã Vọng trứ danh, và đắm mình trong không gian văn hóa độc đáo
+          của người Hà Nội. 
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!--Blog-->
+
+    <section id="blog">
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/blog1.jpg"
+          />
+        </div>
+        <div class="blog-details">
+          <!--h3 là tiêu đề của blog - cần sửa-->
+          <h3>Hà Nội: Không Chỉ Là Phở Và Hồ Gươm</h3>
+          <!--p là đoạn mô tả - cần sửa-->
+          <p>
+            Hà Nội, thủ đô ngàn năm văn hiến, không chỉ nổi tiếng với phở thơm
+            ngon và Hồ Gươm huyền thoại. Thành phố này còn ẩn chứa vô vàn điều
+            thú vị, đang chờ bạn khám phá.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <!--cái <div class="hidden-content"> lầ nội dung chính - cần chỉnh sửa-->
+          <div class="hidden-content">
+            Hãy thử lang thang qua những con ngõ nhỏ của khu phố cổ, nơi thời
+            gian dường như ngừng trôi. Bạn sẽ bắt gặp những ngôi nhà cổ kính,
+            những gánh hàng rong quen thuộc, và cảm nhận được nhịp sống chậm rãi
+            của người Hà Nội. Hà Nội là nơi lưu giữ nhiều di tích lịch sử quan
+            trọng như Văn Miếu - Quốc Tử Giám, Hoàng thành Thăng Long, và Lăng
+            Chủ tịch Hồ Chí Minh. Hãy dành thời gian ghé thăm những bảo tàng như
+            Bảo tàng Lịch sử Quốc gia, Bảo tàng Mỹ thuật Việt Nam, để hiểu thêm
+            về lịch sử và văn hóa của đất nước. Hà Nội là một thành phố đa sắc
+            màu, nơi quá khứ và hiện tại hòa quyện vào nhau. Hãy đến và khám phá
+            những điều thú vị mà thành phố này mang lại!
+          </div>
+        </div>
+        <!--h2 là ngày (ghi đại 1 ngày nào đó cx được)-->
+        <h2>22/02</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/blog2.jpg"
+          />
+        </div>
+        <div class="blog-details">
+          <h3>Hà Nội Mùa Thu: Khúc Tình Ca Vàng</h3>
+          <p>
+            Mùa thu Hà Nội, không chỉ là những vần thơ lãng mạn, mà còn là một
+            bản hòa ca của sắc màu và hương vị.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Những hàng cây thay lá, nhuộm vàng cả con phố, những gánh cốm thơm
+            nồng, và những cơn gió heo may se lạnh. Hãy cùng tôi dạo bước trên
+            những con đường Phan Đình Phùng, Hoàng Diệu, để cảm nhận trọn vẹn vẻ
+            đẹp của mùa thu Hà Nội. Đừng quên thưởng thức một tách trà nóng,
+            nhâm nhi chút cốm, và ngắm nhìn những tà áo dài thướt tha. Mùa thu
+            Hà Nội, một khoảnh khắc không thể nào quên.
+          </div>
+        </div>
+        <h2>25/09</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/blog3.jpg"
+          />
+        </div>
+        <div class="blog-details">
+          <h3>Hà Nội 36 Phố Phường: Mê Cung Của Những Câu Chuyện</h3>
+          <p>
+            36 phố phường Hà Nội, không chỉ là những con phố buôn bán tấp nập,
+            mà còn là một mê cung của những câu chuyện lịch sử và văn hóa. Mỗi
+            con phố mang một cái tên, một đặc trưng riêng, gắn liền với những
+            nghề thủ công truyền thống.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Hãy cùng tôi khám phá những con phố Hàng Bạc, Hàng Mã, Hàng Đào, để
+            tìm hiểu về những nghề truyền thống đã tồn tại hàng trăm năm. Đừng
+            quên ghé thăm những ngôi nhà cổ kính, những ngôi đền, chùa linh
+            thiêng, để cảm nhận được vẻ đẹp cổ kính của Hà Nội. 36 phố phường,
+            một kho tàng văn hóa đang chờ bạn khám phá.
+          </div>
+        </div>
+        <h2>15/06</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/blog4.jpg"
+          />
+        </div>
+        <div class="blog-details">
+          <h3>Hà Nội Về Đêm: Khi Thành Phố Lên Đèn</h3>
+          <p>
+            Hà Nội về đêm, không chỉ là những ánh đèn lung linh, mà còn là một
+            không gian văn hóa sôi động. Hãy cùng tôi dạo bước quanh Hồ Gươm,
+            ngắm nhìn Tháp Rùa soi bóng xuống mặt hồ, hoặc ghé thăm những quán
+            bar, pub sôi động ở khu phố Tây.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Khi màn đêm buông xuống, Hà Nội khoác lên mình một chiếc áo choàng
+            lộng lẫy, quyến rũ khác hẳn vẻ ồn ào, náo nhiệt ban ngày. Ánh đèn
+            vàng ấm áp từ những con phố cổ kính, những tòa nhà cao tầng hiện đại
+            tạo nên một bức tranh huyền ảo, đầy mê hoặc. Hà Nội về đêm mang đến
+            cho bạn một trải nghiệm hoàn toàn khác biệt so với ban ngày. Bạn sẽ
+            cảm nhận được sự tĩnh lặng, lãng mạn, và cả sự sôi động, náo nhiệt
+            của thành phố này. Hãy dành thời gian khám phá Hà Nội về đêm, bạn sẽ
+            không phải thất vọng.
+          </div>
+        </div>
+        <h2>09/03</h2>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Về chúng tôi</h3>
+            <p>
+              Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>Điện thoại: (+84) 99860345</p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>&copy; 2025 Bản quyền thuộc về tổ 1</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $("header").addClass("sticky");
+        } else {
+          $("header").removeClass("sticky");
+        }
+      });
+    });
+
+    //ẩn nội dung trong blog
+    const clickContents = document.querySelectorAll(".click-content");
+    const hiddenContents = document.querySelectorAll(".hidden-content");
+
+    clickContents.forEach((clickContent, index) => {
+      clickContent.addEventListener("click", () => {
+        if (
+          hiddenContents[index].style.display === "none" ||
+          hiddenContents[index].style.display === ""
+        ) {
+          hiddenContents[index].style.display = "block";
+        } else {
+          hiddenContents[index].style.display = "none";
+        }
+      });
+    });
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      // Đợi 1 giây trước khi ẩn
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

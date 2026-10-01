@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Địa Điểm Đặc Biệt</title>
+    <link rel="stylesheet" href="location-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="menu container">
+        <a
+          href="/Around_VN_With_HCT_project/interface/main_interface.html"
+          class="logo"
+          >TRAVEL AROUND VN</a
+        >
+        <nav class="information">
+          <ul id="main-menu">
+            <li>
+              <a href="#" class="active">THÔNG TIN</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Nhạc-->
+
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+    <!-- Banner -->
+    <div class="banner">
+      <img
+        src="/Around_VN_With_HCT_project/image/location/outstanding/banner.jpg"
+        alt="Banner"
+      />
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Địa Điểm Đặc Biệt</h1>
+      <div class="first-content">
+        <p>
+          Đắm mình trong vẻ đẹp choáng ngợp của những kỳ quan kiến trúc, những
+          công trình điêu khắc tinh xảo, những di tích lịch sử vang bóng một
+          thời.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Nội Dung -->
+    <section id="content">
+      <div class="main-content">
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/outstanding/location1.png"
+              alt="Vịnh Hạ Long"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Vịnh Hạ Long - Địa điểm du lịch Việt Nam nổi tiếng nhất</h3>
+            <p>
+              Nhắc đến những địa điểm du lịch Việt Nam nổi tiếng nhất đầu tiên
+              phải kể đến là Vịnh Hạ Long thuộc tỉnh Quảng Ninh. Là 1 trong 7 kỳ
+              quan thiên nhiên Thế giới.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/outstanding/location2.png"
+              alt="Thành phố Hồ Chí Minh"
+            />
+          </div>
+          <div class="content-box">
+            <h3>
+              Thành phố Hồ Chí Minh - “Hòn Ngọc Viễn Đông” của du lịch Việt Nam
+            </h3>
+            <p>
+              Thành phố Hồ Chí Minh hay Sài Gòn được biết đến là một trong hai
+              trung tâm kinh tế - tài chính lớn nhất Việt Nam. Nổi bật bởi sự
+              năng động, hiện đại và sầm uất bậc nhất.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/outstanding/location3.png"
+              alt="Hà Nội"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Hà Nội - Thủ đô ngàn năm văn hiến</h3>
+            <p>
+              Nếu phải giới thiệu các địa điểm du lịch ở Việt Nam thì HCT sẽ
+              không ngần ngại gì mà nhắc đến Hà Nội. Hà Nội - thủ đô ngàn năm
+              văn hiến rất xứng đáng có một vị trí trong danh sách này. con phố.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/outstanding/location4.png"
+              alt="Đà Lạt"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Đà Lạt - Thành phố ngàn hoa thơ mộng</h3>
+            <p>
+              Nhắc đến những địa địa du lịch nổi tiếng ở Việt Nam mà bỏ qua Đà
+              Lạt - thành phố ngàn hoa thơ mộng thì quả thật là một thiếu sót.
+              Với cảnh đẹp lãng mạn cùng khí hậu se lạnh, Đà Lạt là điểm đến hút
+              du nhiều khách tham quan cả trong và ngoài nước.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/outstanding/location5.png"
+              alt="Sapa"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Sapa - Cảnh sắc núi rừng tuyệt đẹp</h3>
+            <p>
+              Nếu bạn có niềm đam mê với cảnh sắc tuyệt đẹp của thiên nhiên, núi
+              non trời đất thì Sa Pa chính là nơi dành cho bạn. Là địa danh nổi
+              tiếng ở Việt Nam thuộc tỉnh Lào Cai.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img
+              src="/Around_VN_With_HCT_project/image/location/outstanding/location6.png"
+              alt="Hà Giang"
+            />
+          </div>
+          <div class="content-box">
+            <h3>Hà Giang</h3>
+            <p>
+              Nếu Sapa là địa điểm du lịch Việt Nam nổi tiếng bởi cảnh quan vừa
+              nên thơ vừa hùng vĩ thì Hà Giang lại gây ấn tượng nhờ sự tráng lệ,
+              bí ẩn và hoang sơ của rừng núi. nhiên
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <hr />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Về chúng tôi</h2>
+            <p>
+              Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Liên hệ</h2>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>Điện thoại: (+84) 99860345</p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>&copy; 2025 Bản quyền thuộc về tổ 1</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      //load
+      const loaderContainer = document.querySelector(".loader-container");
+
+      window.addEventListener("load", () => {
+        // Đợi 1 giây trước khi ẩn
+        setTimeout(() => {
+          loaderContainer.classList.add("unactive");
+        }, 500);
+      });
+    </script>
+  </body>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

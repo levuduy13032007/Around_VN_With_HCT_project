@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bà Rịa Vũng Tàu</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- menu -->
+    <div id="wrapper">
+      <header>
+        <div class="menu container">
+          <a
+            href="/Around_VN_With_HCT_project/interface/main_interface.html"
+            class="logo"
+            >TRAVEL AROUND VN</a
+          >
+          <div class="information">
+            <ul id="main-menu">
+              <li>
+                <a
+                  class="active"
+                  href="/Around_VN_With_HCT_project/content/Nam/vungtau/vungtau-content.html"
+                  >THÔNG TIN</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Nam/vungtau/vungtau-blog.html"
+                  >BLOG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Nam/vungtau/vungtau-booking.html"
+                  >BOOKING</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!--Nhạc-->
+      <div class="music-icon">
+        <i class="fa-solid fa-music"></i>
+      </div>
+
+      <!-- Modal điều khiển nhạc -->
+      <div class="music-modal">
+        <div class="modal-content">
+          <span class="close-btn">×</span>
+          <div class="music-info">
+            <span class="song-title">Tên bài hát</span>
+            <div class="wave-animation"></div>
+          </div>
+          <div class="controls">
+            <button class="control-btn prev-btn">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="control-btn play-pause-btn">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="control-btn next-btn">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+            <input
+              type="range"
+              class="volume-slider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio element ẩn -->
+      <audio id="background-audio" autoplay loop></audio>
+
+      <!-- banner -->
+      <div class="banner">
+        <img
+          src="/Around_VN_With_HCT_project/image/content/banner/blog-banner.jpg"
+          alt="Bà Rịa Vũng Tàu Blog Banner"
+        />
+      </div>
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Blog</h1>
+      <div class="first-content">
+        <p>
+          Hãy tận hưởng hoàng hôn trên Bãi Trước, khám phá Ngọn Hải Đăng cổ kính
+          và thưởng thức bánh khọt giòn rụm. Dù là resort sang trọng hay
+          homestay ấm cúng, Vũng Tàu luôn có chỗ nghỉ lý tưởng cho bạn.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!--Blog-->
+    <section id="blog">
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/blog1.jpg"
+            alt="Blog 1"
+          />
+        </div>
+        <div class="blog-details">
+          <h3>Hẻm Bà Rịa - Vũng Tàu: Những Góc Nhỏ Bình Dị Giữa Phố Biển</h3>
+          <p>
+            Không chỉ nổi tiếng với những bãi biển xanh ngắt và hải sản tươi
+            ngon, Bà Rịa - Vũng Tàu còn có những con hẻm nhỏ mang trong mình nét
+            đẹp bình dị và những câu chuyện của thời gian
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            - Len lỏi giữa những con đường lớn, các con hẻm như hẻm 444 Trương
+            Công Định, hẻm 69 Bacu hay hẻm 133 Hoàng Hoa Thám là nơi lưu giữ
+            nhịp sống chậm rãi và gần gũi của người dân phố biển. Những quán ăn
+            nhỏ ven đường tỏa hương thơm của bánh khọt, bánh canh ghẹ hay bún
+            súng – những món ăn đặc trưng của Vũng Tàu. - Không chỉ là nơi giao
+            thoa của ẩm thực, nhiều con hẻm còn là nơi để lại dấu ấn thời gian
+            với những bức tường rêu phong, những chiếc xe đạp cũ dựng bên hiên
+            nhà hay những giàn hoa giấy rực rỡ đung đưa trong gió biển. Đặc
+            biệt, về đêm, những con hẻm nhỏ lại trở thành điểm tụ họp quen thuộc
+            của người dân địa phương, nơi những câu chuyện đời thường được kể
+            bên ly cà phê vợt hay cốc trà đá mát lạnh. - Dù bạn là người yêu
+            thích sự nhộn nhịp của phố biển hay đơn giản chỉ muốn tìm một góc
+            nhỏ để tận hưởng không khí yên bình, những con hẻm Bà Rịa - Vũng Tàu
+            chắc chắn sẽ mang đến cho bạn một trải nghiệm khó quên. Hãy thử một
+            lần khám phá và cảm nhận vẻ đẹp dung dị nhưng đầy cuốn hút của nơi
+            đây!
+          </div>
+        </div>
+        <h2>22/02</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/blog2.jpg"
+            alt="Blog 2"
+          />
+        </div>
+        <div class="blog-details">
+          <h3>Trà Sữa Bà Rịa - Vũng Tàu: Hương Vị Ngọt Ngào Của Phố Biển</h3>
+          <p>
+            Không chỉ có biển xanh và hải sản, Bà Rịa - Vũng Tàu còn là thiên
+            đường trà sữa với vô số quán lớn nhỏ, từ thương hiệu nổi tiếng đến
+            những quán địa phương mang phong cách riêng.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Dạo quanh các con đường như Ba Cu, Lê Hồng Phong hay Trương Công
+            Định, bạn dễ dàng bắt gặp những quán trà sữa đông đúc. Các thương
+            hiệu như Gong Cha, Tocotoco hay những quán địa phương như Gấu Tea,
+            Bobapop luôn thu hút giới trẻ. Còn gì tuyệt hơn khi cầm ly trà sữa
+            mát lạnh, dạo biển chiều và tận hưởng hương vị ngọt ngào của phố
+            biển?
+          </div>
+        </div>
+        <h2>25/09</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/blog3.jpg"
+            alt="Blog 3"
+          />
+        </div>
+        <div class="blog-details">
+          <h3>
+            Bà Rịa - Vũng Tàu Qua Lăng Kính Ẩm Thực – Từ Quán Nhỏ Đến Nhà Hàng
+            Đẳng Cấp
+          </h3>
+          <p>
+            Bà Rịa - Vũng Tàu không chỉ thu hút du khách bởi biển xanh cát trắng
+            mà còn bởi nền ẩm thực phong phú, từ các quán ăn bình dân đến những
+            nhà hàng cao cấp, mang đậm hương vị biển cả.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Nếu yêu thích ẩm thực đường phố, bạn không thể bỏ qua bánh khọt Gốc
+            Vú Sữa, bún súng, hay hải sản tươi sống ở chợ Xóm Lưới. Những con
+            đường như Đồ Chiểu, Hoàng Hoa Thám luôn tấp nập thực khách mỗi tối.
+            Ngược lại, nếu muốn một không gian sang trọng, bạn có thể ghé Marina
+            Club, Fusion Suites hay La Sirena để thưởng thức những món hải sản
+            cao cấp trong không gian lãng mạn bên biển. Dù là một đĩa bánh khọt
+            giòn rụm hay một bữa tiệc hải sản thịnh soạn, ẩm thực Bà Rịa - Vũng
+            Tàu luôn mang đến trải nghiệm khó quên. Hãy để vị giác dẫn lối và
+            khám phá hương vị độc đáo của phố biển này!
+          </div>
+        </div>
+        <h2>15/06</h2>
+      </div>
+      <!-- Blog 4 bị thiếu trong web 2 gốc, không thêm vào để giữ nguyên nội dung -->
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>
+              Điện thoại:
+              <ul>
+                <li>(+84) 79439905</li>
+                <li>(+84) 99860345</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>© 2024 [Tên công ty]. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $("header").addClass("sticky");
+        } else {
+          $("header").removeClass("sticky");
+        }
+      });
+    });
+
+    //ẩn nội dung trong blog
+    const clickContents = document.querySelectorAll(".click-content");
+    const hiddenContents = document.querySelectorAll(".hidden-content");
+
+    clickContents.forEach((clickContent, index) => {
+      clickContent.addEventListener("click", () => {
+        if (
+          hiddenContents[index].style.display === "none" ||
+          hiddenContents[index].style.display === ""
+        ) {
+          hiddenContents[index].style.display = "block";
+        } else {
+          hiddenContents[index].style.display = "none";
+        }
+      });
+    });
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

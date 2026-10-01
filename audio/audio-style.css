@@ -1,0 +1,128 @@
+/* nhạc */
+
+.music-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #00c4cc;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  z-index: 1000;
+}
+
+.music-icon:hover {
+  transform: scale(1.2) rotate(15deg);
+  color: #00a0a6;
+}
+
+.music-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  animation: fadeIn 0.5s ease;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0, 196, 204, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.modal-content:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #00c4cc;
+}
+
+.close-btn:hover {
+  color: #ff5555;
+}
+
+.music-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.song-title {
+  font-size: 18px;
+  color: #00c4cc;
+}
+
+.wave-animation {
+  margin-left: 10px;
+  width: 30px;
+  height: 10px;
+  background: linear-gradient(90deg, #00c4cc 0%, transparent 100%);
+  animation: wave 1s infinite;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.control-btn {
+  background: #00c4cc;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.control-btn:hover {
+  transform: scale(1.1);
+  background: #00a0a6;
+}
+
+.control-btn:active {
+  transform: scale(0.95);
+}
+
+.volume-slider {
+  accent-color: #00c4cc;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.5);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tây Ninh</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- menu -->
+    <div id="wrapper">
+      <header>
+        <div class="menu container">
+          <a
+            href="/Around_VN_With_HCT_project/interface/main_interface.html"
+            class="logo"
+            >TRAVEL AROUND VN</a
+          >
+          <div class="information">
+            <ul id="main-menu">
+              <li>
+                <a
+                  class="active"
+                  href="/Around_VN_With_HCT_project/content/Nam/tayninh/tayninh-content.html"
+                  >THÔNG TIN</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Nam/tayninh/tayninh-blog.html"
+                  >BLOG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Nam/tayninh/tayninh-booking.html"
+                  >BOOKING</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!--Nhạc-->
+      <div class="music-icon">
+        <i class="fa-solid fa-music"></i>
+      </div>
+
+      <!-- Modal điều khiển nhạc -->
+      <div class="music-modal">
+        <div class="modal-content">
+          <span class="close-btn">×</span>
+          <div class="music-info">
+            <span class="song-title">Tên bài hát</span>
+            <div class="wave-animation"></div>
+          </div>
+          <div class="controls">
+            <button class="control-btn prev-btn">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="control-btn play-pause-btn">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="control-btn next-btn">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+            <input
+              type="range"
+              class="volume-slider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio element ẩn -->
+      <audio id="background-audio" autoplay loop></audio>
+
+      <!-- banner -->
+      <div class="banner">
+        <img
+          src="/Around_VN_With_HCT_project/image/content/banner/booking-banner.jpg"
+          alt="Tây Ninh Booking Banner"
+        />
+      </div>
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Booking</h1>
+      <div class="first-content">
+        <p>
+          Chúng tôi sẽ đưa bạn khám phá Núi Bà Đen hùng vĩ, chiêm bái Tòa Thánh
+          Cao Đài linh thiêng và thưởng thức đặc sản bánh tráng phơi sương Trảng
+          Bàng. Dù bạn muốn nghỉ dưỡng tại khách sạn hiện đại hay trải nghiệm
+          không gian yên bình ở homestay gần thiên nhiên, Tây Ninh luôn có lựa
+          chọn phù hợp dành cho bạn.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!--Nội Dung-->
+    <div class="hotel">
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/booking1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.020241353105!2d105.80972827509314!3d21.031876080618215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab6cecd4ed9d%3A0xaa0bbd53d1491c7a!2sLotte%20Hotel%20Hanoi!5e0!3m2!1svi!2s!4v1740761661748!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>Vinpearl Hotel Tây Ninh – Khách Sạn Sang Trọng Bậc Nhất</h3>
+          <p>
+            Tọa lạc ngay trung tâm thành phố, Vinpearl Hotel Tây Ninh là khách
+            sạn 5 sao cao cấp, mang đến không gian nghỉ dưỡng đẳng cấp với thiết
+            kế hiện đại, phòng ốc sang trọng và dịch vụ tiêu chuẩn quốc tế. Từ
+            đây, du khách có thể ngắm nhìn toàn cảnh Tây Ninh, thưởng thức ẩm
+            thực cao cấp và tận hưởng các tiện ích như spa, hồ bơi, phòng gym.
+          </p>
+        </div>
+      </div>
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/booking2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1817513153896!2d105.85380007509295!3d21.02541248062307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abeb98f8b54d%3A0x90d6982234a65f25!2sSofitel%20Legend%20Metropole%20Hotel!5e0!3m2!1svi!2s!4v1740763407487!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>Khu Nghỉ Dưỡng Sunrise Tây Ninh – Chốn Bình Yên Giữa Thiên Nhiên</h3>
+          <p>
+            Nếu bạn đang tìm một nơi để thư giãn sau những ngày làm việc căng
+            thẳng, Sunrise Tây Ninh là điểm đến lý tưởng. Khu nghỉ dưỡng này có
+            không gian thoáng đãng, bao quanh bởi cây xanh, hồ nước và những căn
+            villa sang trọng. Đây là nơi hoàn hảo để tận hưởng không khí trong
+            lành, trải nghiệm dịch vụ spa cao cấp và thưởng thức ẩm thực đặc
+            sắc.
+          </p>
+        </div>
+      </div>
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/booking3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3739992000997!2d105.83931867509276!3d21.017716280628893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8f9af04521%3A0xdccfaebef264a0b1!2sHotel%20du%20Parc%20Hanoi!5e0!3m2!1svi!2s!4v1740763466259!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>Nhà Hàng Lam Sơn – Ẩm Thực Cao Cấp Giữa Lòng Tây Ninh</h3>
+          <p>
+            Nằm trong khuôn viên Vinpearl Hotel Tây Ninh, nhà hàng Lam Sơn mang
+            đến trải nghiệm ẩm thực sang trọng với thực đơn đa dạng, từ món Việt
+            truyền thống đến các món Âu – Á tinh tế. Không gian trang nhã,
+            phong cách phục vụ chuyên nghiệp và nguyên liệu cao cấp là những
+            yếu tố giúp Lam Sơn trở thành điểm đến yêu thích của du khách và
+            giới thượng lưu.
+          </p>
+        </div>
+      </div>
+      <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="hotel-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/booking4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="google-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1118817595084!2d105.8482912750931!3d21.028208880621065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab952308667b%3A0xdb99ed2e3e265856!2sApricot%20Hotel!5e0!3m2!1svi!2s!4v1740763500081!5m2!1svi!2s"
+            width="400"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="hotel-content">
+          <h3>Golden City Coffee – Quán Cà Phê Sang Trọng Bậc Nhất Tây Ninh</h3>
+          <p>
+            Với thiết kế sang trọng theo phong cách châu Âu, Golden City Coffee
+            không chỉ là quán cà phê mà còn là không gian thư giãn, gặp gỡ đối
+            tác hay tổ chức các buổi họp mặt đẳng cấp. Đồ uống tại đây được pha
+            chế bởi những barista chuyên nghiệp, mang đến hương vị đặc biệt từ
+            cà phê nguyên chất, trà thượng hạng đến cocktail sáng tạo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              Chúng tôi mang sứ mệnh giới thiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>
+              Điện thoại:
+              <ul>
+                <li>(+84) 79439905</li>
+                <li>(+84) 99860345</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>© 2024 [Tên công ty]. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $("header").addClass("sticky");
+        } else {
+          $("header").removeClass("sticky");
+        }
+      });
+    });
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

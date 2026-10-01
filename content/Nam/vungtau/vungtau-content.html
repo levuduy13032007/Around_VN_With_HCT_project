@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bà Rịa Vũng Tàu</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="menu container">
+        <a
+          href="/Around_VN_With_HCT_project/interface/main_interface.html"
+          class="logo"
+          >TRAVEL AROUND VN</a
+        >
+        <nav class="information">
+          <ul id="main-menu">
+            <li>
+              <a
+                class="active"
+                href="/Around_VN_With_HCT_project/content/Nam/vungtau/vungtau-content.html"
+                >THÔNG TIN</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Around_VN_With_HCT_project/content/Nam/vungtau/vungtau-blog.html"
+                >BLOG</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Around_VN_With_HCT_project/content/Nam/vungtau/vungtau-booking.html"
+                >BOOKING</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Nhạc-->
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+    <!-- Banner -->
+    <div class="banner">
+      <img
+        src="/Around_VN_With_HCT_project/image/content/banner/content-banner.jpg"
+        alt="Bà Rịa Vũng Tàu Banner"
+      />
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Bà Rịa Vũng Tàu</h1>
+      <div class="first-content">
+        <p>
+          Tỉnh Bà Rịa – Vũng Tàu nằm trong Vùng kinh tế trọng điểm phía Nam, ở
+          vị trí cửa ngõ ra Biển Đông của các tỉnh trong khu vực miền Đông Nam
+          Bộ, Bà Rịa – Vũng Tàu kết nối với Thành phố Hồ Chí Minh và các địa
+          phương khác bằng đường bộ, đường không và đường thủy. Năm 2024, Bà Rịa
+          – Vũng Tàu cũng là 1 trong 8 tỉnh được Chính phủ Việt Nam quy hoạch
+          thành thành phố trực thuộc trung ương.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Slogan -->
+    <div class="slogan" data-tilt>
+      <img
+        src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/logo1.jpg"
+        alt="Slogan"
+      />
+    </div>
+    <h2>
+      Ai về Vũng Tàu quê ta <br />Biển xanh sóng vỗ chan hòa tình thương
+    </h2>
+
+    <!-- Nội dung -->
+    <section class="content">
+      <div class="content-gallery">
+        <div class="gallery-grid">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content1.jpg"
+            alt="Hình 1"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content2.jpg"
+            alt="Hình 2"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content3.jpg"
+            alt="Hình 3"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content4.jpg"
+            alt="Hình 4"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content5.jpg"
+            alt="Hình 5"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content6.jpg"
+            alt="Hình 6"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content7.jpg"
+            alt="Hình 7"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content8.jpg"
+            alt="Hình 8"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content9.jpg"
+            alt="Hình 9"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content10.jpg"
+            alt="Hình 10"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content11.jpg"
+            alt="Hình 11"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content12.jpg"
+            alt="Hình 12"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content13.jpg"
+            alt="Hình 13"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content14.jpg"
+            alt="Hình 14"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content15.jpg"
+            alt="Hình 15"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content16.jpg"
+            alt="Hình 16"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content17.jpg"
+            alt="Hình 17"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/vungtau/content18.jpg"
+            alt="Hình 18"
+          />
+        </div>
+      </div>
+      <div class="content-main">
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-mountain-sun"></i> DU LỊCH</h3>
+          <div class="sub-item">
+            <h5>Các bãi biển đẹp</h5>
+            <p>
+              Bãi Sau: Bãi biển chính của Vũng Tàu, nước trong, sóng êm, thích
+              hợp để tắm biển. Bãi Trước: Khu vực trung tâm, thích hợp để dạo bộ
+              ngắm hoàng hôn. Bãi Dâu: Biển nhỏ, yên tĩnh, có nhiều quán hải sản.
+              Bãi Vọng Nguyệt: Biển hoang sơ, nước xanh ngắt, đường đi khá khó
+              nhưng rất đẹp
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Các điểm tham quan nổi tiếng</h5>
+            <p>
+              Tượng Chúa Kitô (Tượng Chúa dang tay): Biểu tượng của Vũng Tàu, có
+              thể leo lên tay tượng để ngắm toàn cảnh biển. Ngọn Hải Đăng Vũng
+              Tàu: Một trong những ngọn hải đăng cổ nhất Việt Nam, view cực đẹp
+              Mũi Nghinh Phong: Cảnh đẹp, có "Cổng trời" sống ảo siêu chất. Hòn
+              Bà: Hòn đảo nhỏ giữa biển, có thể đi bộ ra vào những ngày thủy
+              triều rút. Bạch Dinh: Dinh thự cổ kính kiểu Pháp, nơi lưu giữ nhiều
+              hiện vật lịch sử
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Các địa điểm tâm linh</h5>
+            <p>
+              Chùa Thích Ca Phật Đài: Ngôi chùa đẹp, yên bình, có tượng Phật
+              Thích Ca lớn Chùa Niết Bàn Tịnh Xá: Chùa có kiến trúc đẹp, hướng ra
+              biển. Linh Sơn Cổ Tự: Ngôi chùa lâu đời với tượng Phật cổ kính Đền
+              Thánh Đức Mẹ Bãi Dâu: Nơi hành hương nổi tiếng của đạo Công giáo
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Khu vui chơi và du lịch sinh thái</h5>
+            <p>
+              Khu du lịch Hồ Mây: Công viên trên núi, có cáp treo, nhiều trò chơi
+              giải trí. Suối Tiên - Núi Dinh: Khu thiên nhiên mát mẻ, thích hợp
+              trekking, dã ngoại. Khu du lịch suối nước nóng Bình Châu: Nơi tắm
+              khoáng nóng, thư giãn giữa thiên nhiên.
+            </p>
+          </div>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-bowl-rice"></i> Ẩm thực</h3>
+          <div class="sub-item">
+            <h5>Bánh Khọt</h5>
+            <p>
+              là món ăn cực kỳ nổi tiếng không chỉ ở BRVT mà nó đã đạt kỷ lục
+              giá trị ẩm thực Châu Á - bạn sẽ dễ dàng tìm thấy những điểm để
+              thưởng thức món ăn này tại đây, trong đó có một số địa chỉ nổi
+              tiếng được truyền danh như Bánh Khọt Cô Ba số 01 Hoàng Hoa Thám ,
+              Bánh Khọt Gốc Vũ Sữa…
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Hải sản Nướng</h5>
+            <p>
+              cũng là một trong những đặc sản của vùng biển BRVT với nguyên liệu
+              tươi ngon những con mực, bạch buộc, Hàu… được nướng vàng rượm dưới
+              ánh than hồng sẽ cho bạn một vị ngon khó cưỡng.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Bánh bông lan trứng muối</h5>
+            <p>
+              Loại bánh mềm xốp, có vị mặn ngọt hòa quyện từ trứng muối và sốt
+              phô mai. Quán nổi tiếng: Gốc Cột Điện
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Gỏi cá mai</h5>
+            <p>
+              Gỏi cá mai tươi, tái chanh, trộn với rau sống, đậu phộng, nước chấm
+              đậm đà.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Cháo hàu</h5>
+            <p>
+              Cháo nóng hổi, hàu tươi béo ngậy, thích hợp ăn sáng hoặc đêm khuya.
+            </p>
+          </div>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-font-awesome"></i> Văn hoá – Bản sắc</h3>
+          <div class="sub-item">
+            <h5>Điều đặc biệt nhất của tỉnh là Bà Rịa – Vũng Tàu</h5>
+            <p>
+              có 10 đền thờ cá voi, nhiều nhất ở miền Nam. Đương nhiên lễ hội
+              Nghinh Ông, hay Tết của biển, là một sự kiện quan trọng trong đời
+              sống văn hóa và tâm linh của dân chài nơi đây.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Tỉnh có ngày lễ Dinh Cô (Long Hải)</h5>
+            <p>
+              từ 10/2 đến 12/2 âm lịch để thờ cúng Mẫu – Nữ thần và kết hợp cúng
+              thần biển. Bên cạnh đó vào ngày giỗ ông Trần 20 tháng 2 (âm lịch)
+              và tết trùng cửu 9 tháng 9 (âm lịch) tại Nhà Lớn Long Sơn có tổ
+              chức lễ hội long trọng thu hút hàng chục ngàn người từ các nơi về
+              tham dự.
+            </p>
+          </div>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-location-dot"></i> Địa điểm du lịch</h3>
+          <div class="sub-item">
+            <h5>Bãi sau Vũng Tàu</h5>
+            <p>
+              là một trong những bãi biển đẹp và nổi tiếng nhất ở thành phố Vũng
+              Tàu, thu hút đông đảo du khách nhờ cảnh quan thiên nhiên tuyệt
+              đẹp, bãi cát dài mịn và làn nước trong xanh.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Bãi trước Vũng Tàu</h5>
+            <p>
+              là một trong hai bãi biển chính của thành phố Vũng Tàu, nằm ở trung
+              tâm thành phố và là điểm đến quen thuộc của du khách. Khác với Bãi
+              Sau, Bãi Trước không chỉ có bãi biển mà còn là khu vực sầm uất với
+              nhiều công trình du lịch, vui chơi, giải trí.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Chùa Linh Sơn</h5>
+            <p>
+              Chùa Linh Sơn Cổ Tự là một trong những ngôi chùa lâu đời và linh
+              thiêng nhất ở Vũng Tàu, thu hút nhiều Phật tử và du khách đến tham
+              quan, chiêm bái.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Thiền Viện Chơn Không</h5>
+            <p>
+              là một trong những ngôi thiền viện nổi tiếng ở Vũng Tàu, thuộc hệ
+              phái Thiền Tông Trúc Lâm do Thiền sư Thích Thanh Từ sáng lập. Đây
+              là nơi thu hút nhiều du khách và Phật tử đến để tịnh tâm, học
+              thiền và thưởng ngoạn phong cảnh thiên nhiên.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Tượng Chúa Kito</h5>
+            <p>
+              hay còn gọi là Tượng Chúa dang tay, là một trong những điểm tham
+              quan nổi tiếng và mang tính biểu tượng của thành phố Vũng Tàu. Đây
+              là bức tượng Chúa lớn nhất Việt Nam, đồng thời là một trong những
+              tượng Chúa Kito lớn nhất châu Á.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Khu Du Lịch Hồ Mây</h5>
+            <p>
+              Khu du lịch Hồ Mây, hay còn gọi là Hồ Mây Park, là một điểm đến hấp
+              dẫn tại Vũng Tàu, kết hợp hài hòa giữa du lịch núi và biển, mang
+              lại trải nghiệm đa dạng cho du khách.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <hr />
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Về chúng tôi</h2>
+            <p>
+              Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> Youtube</ Knut>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Liên hệ</h2>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>
+              Điện thoại:
+              <ul>
+                <li>(+84) 79439905</li>
+                <li>(+84) 99860345</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>© 2024 [Tên công ty]. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop()) {
+            $("header").addClass("sticky");
+          } else {
+            $("header").removeClass("sticky");
+          }
+        });
+      });
+
+      //load
+      const loaderContainer = document.querySelector(".loader-container");
+
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          loaderContainer.classList.add("unactive");
+        }, 500);
+      });
+    </script>
+    <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+    <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+  </body>
+</html>

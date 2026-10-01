@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    /><link
+    rel="stylesheet"
+    href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+  />
+  <link
+    rel="stylesheet"
+    href="/Around_VN_With_HCT_project/audio/audio-style.css"
+  />
+    <title>Hà Nội</title>
+  <body>
+    <!-- menu -->
+
+    <div id="wrapper">
+        <header>
+          <div class="menu container">
+            <a
+              href="/Around_VN_With_HCT_project/interface/main_interface.html"
+              class="logo"
+              >TRAVEL AROUND VN</a
+            >
+            <div class="information">
+              <ul id="main-menu">
+                <li>
+                  <a class="active" href="/Around_VN_With_HCT_project/content/Bac/hanoi/hanoi-content.html">THÔNG TIN</a>
+                </li>
+                <li>
+                  <a
+                    href="/Around_VN_With_HCT_project/content/Bac/hanoi/hanoi-blog.html"
+                    >BLOG</a
+                  >
+                </li>
+                <li><a href="/Around_VN_With_HCT_project/content/Bac/hanoi/hanoi-booking.html">BOOKING</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+
+        <!--Nhạc-->
+
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+  
+        <!-- banner -->
+        
+      <div class="banner">
+        <img src="/Around_VN_With_HCT_project/image/content/banner/booking-banner.jpg"/>
+      </div>
+
+      </div>
+      <!-- Tiêu đề -->
+      <div id="title">
+        <h1>Booking</h1>
+        <div class="first-content">
+
+          <!--Đoạn giới hiệu của booking-->
+          <p>Hà Nội, thủ đô ngàn năm văn hiến, không chỉ nổi tiếng với những di tích lịch sử, văn hóa mà còn là điểm đến lý tưởng cho những người yêu sách. Với sự phát triển của ngành du lịch và dịch vụ, việc đặt phòng (booking) ở Hà Nội trở nên dễ dàng và đa dạng hơn bao giờ hết.</p>
+        </div>
+      </div>
+      <hr />
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+      <!--Nội Dung-->
+
+      <div class="hotel">
+        <div class="hotel-box"  data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+            <div class="hotel-img">
+              <img src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/booking1.jpg" alt="">
+            </div>
+            <div class="google-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.020241353105!2d105.80972827509314!3d21.031876080618215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab6cecd4ed9d%3A0xaa0bbd53d1491c7a!2sLotte%20Hotel%20Hanoi!5e0!3m2!1svi!2s!4v1740761661748!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="hotel-content">
+                <!--h3 là tiêu đề - cần sửa-->
+                <h3>Lotte Hotel Hanoi</h3>
+                <!--p là phần nội dung-->
+                <p>Được xây dựng tại vị trí hạng nhất của thành phố Hà Nội, chỉ cần bước ra bên ngoài Lotte Hotel Hanoi, bạn có thể dễ dàng tiếp cận các điểm đến hấp dẫn ở thành phố này.</p>
+            </div>
+        </div>
+        <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+          <div class="hotel-img">
+            <img src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/booking2.jpg" alt="">
+          </div>
+          <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1817513153896!2d105.85380007509295!3d21.02541248062307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abeb98f8b54d%3A0x90d6982234a65f25!2sSofitel%20Legend%20Metropole%20Hotel!5e0!3m2!1svi!2s!4v1740763407487!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="hotel-content">
+              <h3>Legend Metropo Sofile</h3>
+              <p>Sofitel Legend Metropole Hà Nội, với bản sắc riêng độc đáo, với bề dày lịch sử và nét lãng mạn cổ điển sẽ khiến hành trình của bạn tới Hà Nội càng trở nên đặc biệt.</p>
+          </div>
+        </div>
+        <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+          <div class="hotel-img">
+            <img src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/booking3.jpg" alt="">
+          </div>
+          <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3739992000997!2d105.83931867509276!3d21.017716280628893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8f9af04521%3A0xdccfaebef264a0b1!2sHotel%20du%20Parc%20Hanoi!5e0!3m2!1svi!2s!4v1740763466259!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="hotel-content">
+              <h3>Hotel Du Parc Hanoi</h3>
+              <p>là khách sạn 5 sao đầu tiên có các tiện nghi chất lượng Nhật Bản như bồn vệ sinh tự động hiện đại trang bị tại tất cả các phòng.</p>
+          </div>
+        </div>
+        <div class="hotel-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+          <div class="hotel-img">
+            <img src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/booking4.jpg" alt="">
+          </div>
+          <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1118817595084!2d105.8482912750931!3d21.028208880621065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab952308667b%3A0xdb99ed2e3e265856!2sApricot%20Hotel!5e0!3m2!1svi!2s!4v1740763500081!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="hotel-content">
+            <h3>Apricot Hotel</h3>
+            <p>Tọa lạc trên phố Hàng Trống có bề dày lịch sử, với tầm nhìn ôm trọn Hồ Gươm cổ kính, khách sạn Apricot Hotel là địa chỉ lý tưởng để du khách khám phá những tinh túy về văn hóa và nghệ thuật Việt</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Footer-->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-section about">
+              <h3>Về chúng tôi</h3>
+              <p>
+                Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+              </p>
+              <ul class="social-icons">
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-section contact">
+              <h3>Liên hệ</h3>
+              <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+              <p>Email: AroundVN-with-HCT@gmail.com</p>
+              <p>Điện thoại: (+84) 99860345</p>
+            </div>
+          </div>
+          <div class="footer-bottom scroll-animation">
+            <p>&copy; 2025 Bản quyền thuộc về tổ 1</p>
+          </div>
+        </div>
+      </footer>
+  </body>
+
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $("header").addClass("sticky");
+        } else {
+          $("header").removeClass("sticky");
+        }
+      });
+    });
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      // Đợi 1 giây trước khi ẩn
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

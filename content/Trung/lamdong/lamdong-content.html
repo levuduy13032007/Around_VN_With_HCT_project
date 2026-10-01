@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lâm Đồng</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="menu container">
+        <a
+          href="/Around_VN_With_HCT_project/interface/main_interface.html"
+          class="logo"
+          >TRAVEL AROUND VN</a
+        >
+        <nav class="information">
+          <ul id="main-menu">
+            <li>
+              <a
+                class="active"
+                href="/Around_VN_With_HCT_project/content/Trung/lamdong/lamdong-content.html"
+                >THÔNG TIN</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Around_VN_With_HCT_project/content/Trung/lamdong/lamdong-blog.html"
+                >BLOG</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Around_VN_With_HCT_project/content/Trung/lamdong/lamdong-booking.html"
+                >BOOKING</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Nhạc-->
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+    <!-- Banner -->
+    <div class="banner">
+      <img
+        src="/Around_VN_With_HCT_project/image/content/banner/content-banner.jpg"
+        alt="Lâm Đồng Banner"
+      />
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Lâm Đồng</h1>
+      <div class="first-content">
+        <p>
+          Lâm Đồng là một trong những tỉnh cao nguyên nổi tiếng nhất Việt Nam,
+          đặc biệt với thành phố Đà Lạt – điểm đến yêu thích của du khách bởi
+          khí hậu mát mẻ quanh năm, cảnh sắc thiên nhiên thơ mộng và nền văn hóa
+          độc đáo. Vị trí: Tây Nguyên, Việt Nam Diện tích: ~9.783 km² Dân số:
+          Hơn 1,3 triệu người Biệt danh: "Xứ sở ngàn hoa"
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Slogan -->
+    <div class="slogan" data-tilt>
+      <img
+        src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/logo1.jpg"
+        alt=""
+      />
+    </div>
+    <h2>
+      "Đà Lạt – nơi tình yêu và thiên nhiên cùng nhau vẽ nên những giấc mơ."
+    </h2>
+
+    <!-- Nội Dung -->
+    <section class="content">
+      <div class="content-gallery">
+        <div class="gallery-grid">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content1.jpg"
+            alt="Hình 1"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content2.jpg"
+            alt="Hình 2"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content3.jpg"
+            alt="Hình 3"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content4.jpg"
+            alt="Hình 4"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content5.jpg"
+            alt="Hình 5"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content6.jpg"
+            alt="Hình 6"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content7.jpg"
+            alt="Hình 7"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content8.jpg"
+            alt="Hình 8"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content9.jpg"
+            alt="Hình 9"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content10.jpg"
+            alt="Hình 10"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content11.jpg"
+            alt="Hình 11"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content12.jpg"
+            alt="Hình 12"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content13.jpg"
+            alt="Hình 13"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content14.jpg"
+            alt="Hình 14"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content15.jpg"
+            alt="Hình 15"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content16.jpg"
+            alt="Hình 16"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content17.jpg"
+            alt="Hình 17"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/content18.jpg"
+            alt="Hình 18"
+          />
+        </div>
+      </div>
+      <div class="content-main">
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-mountain-sun"></i> Phong cảnh</h3>
+          <div class="sub-item">
+            <h5>Hồ Xuân Hương</h5>
+            <p>
+              Hồ nước nằm giữa lòng Đà Lạt, là một trong những biểu tượng của
+              thành phố. Bao quanh hồ là những hàng thông xanh mướt, vườn hoa
+              đầy màu sắc và các quán cà phê thơ mộng. Đây là địa điểm lý tưởng
+              để tản bộ, đạp xe hoặc thưởng thức một tách cà phê trong không
+              gian se lạnh đặc trưng của Đà Lạt.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Thung Lũng Tình Yêu</h5>
+            <p>
+              Một trong những điểm đến lãng mạn nhất Đà Lạt, nổi bật với những
+              đồi thông xanh rì và vườn hoa rực rỡ. Du khách có thể đi thuyền
+              trên hồ Đa Thiện, tham quan các khu vườn tình yêu, hoặc tận hưởng
+              không gian yên bình của thiên nhiên.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Đồi chè Cầu Đất</h5>
+            <p>
+              Cách trung tâm Đà Lạt khoảng 25km, đồi chè Cầu Đất mang đến khung
+              cảnh bình yên với những luống chè xanh mướt trải dài. Đây là điểm
+              check-in yêu thích của du khách, đặc biệt vào sáng sớm khi sương
+              mù còn bao phủ tạo nên khung cảnh huyền ảo.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Thác Datanla, Pongour, Prenn</h5>
+            <p>
+              Những thác nước nổi tiếng của Lâm Đồng, mỗi thác mang một vẻ đẹp
+              riêng biệt. Thác Datanla có trò chơi máng trượt hấp dẫn, thác
+              Pongour được ví như "thác nước bảy tầng" hùng vĩ, còn thác Prenn
+              mang vẻ đẹp hoang sơ với dòng nước đổ xuống như dải lụa trắng giữa
+              núi rừng.
+            </p>
+          </div>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-bowl-rice"></i> Ẩm Thực – Hương Vị Cao Nguyên</h3>
+          <div class="sub-item">
+            <h5>Bánh tráng nướng Đà Lạt</h5>
+            <p>
+              Được mệnh danh là "pizza Việt Nam", bánh tráng nướng có lớp vỏ
+              giòn rụm, bên trong phủ đầy topping như trứng, xúc xích, hành lá
+              và phô mai, tạo nên hương vị thơm ngon đặc trưng.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Lẩu gà lá é</h5>
+            <p>
+              Món ăn đặc trưng của Đà Lạt với thịt gà mềm ngọt kết hợp với lá é
+              có vị chua nhẹ, tạo nên hương vị thanh mát, ấm áp. Lẩu thường được
+              ăn kèm với nấm, măng tươi và bún.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Sữa đậu nành nóng</h5>
+            <p>
+              Một thức uống quen thuộc vào buổi tối tại Đà Lạt, sữa đậu nành
+              nóng béo ngậy, thơm lừng, thường được uống kèm bánh ngọt hoặc bánh
+              tiêu, rất thích hợp để nhâm nhi trong tiết trời se lạnh.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Dâu tây</h5>
+            <p>
+              Đặc sản nổi tiếng của vùng đất cao nguyên, dâu tây Đà Lạt có vị
+              ngọt dịu, mọng nước. Du khách có thể tham quan các vườn dâu, tự
+              tay hái và thưởng thức những trái dâu tươi ngon.
+            </p>
+          </div>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-font-awesome"></i> Văn hoá – Bản sắc</h3>
+          <div class="sub-item">
+            <h5>Kiến Trúc Biệt Thự Pháp</h5>
+            <p>
+              Đà Lạt mang đậm dấu ấn kiến trúc Pháp với những biệt thự cổ kính
+              nằm giữa rừng thông. Những công trình như Dinh Bảo Đại, Trường Cao
+              đẳng Sư phạm Đà Lạt hay các khu biệt thự trên đường Trần Hưng Đạo
+              đều thể hiện rõ phong cách kiến trúc châu Âu thanh lịch.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Nhà Thờ Con Gà</h5>
+            <p>
+              Nhà thờ lớn nhất Đà Lạt, nổi bật với kiến trúc Gothic đặc trưng và
+              tháp chuông cao vút. Đây là một trong những điểm tham quan tôn
+              giáo quan trọng và cũng là nơi mang đến những góc chụp hình tuyệt
+              đẹp.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Chùa Linh Phước</h5>
+            <p>
+              Ngôi chùa độc đáo với lối kiến trúc khảm sành, nổi tiếng với tượng
+              Phật Quan Âm làm từ hoa bất tử và tháp chuông cao nhất Việt Nam.
+              Đây không chỉ là địa điểm tâm linh mà còn là điểm tham quan thu
+              hút nhiều du khách.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <hr />
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Về Chúng Tôi</h2>
+            <p>
+              Chúng tôi mang sứ mệnh giới thiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Liên hệ</h2>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>
+              Điện thoại:
+              <ul>
+                <li>(+84) 79439905</li>
+                <li>(+84) 99860345</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>© 2024 [Tên công ty]. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop()) {
+            $("header").addClass("sticky");
+          } else {
+            $("header").removeClass("sticky");
+          }
+        });
+      });
+
+      //load
+      const loaderContainer = document.querySelector(".loader-container");
+
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          loaderContainer.classList.add("unactive");
+        }, 500);
+      });
+    </script>
+    <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+  </body>
+</html>

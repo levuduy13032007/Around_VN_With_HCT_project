@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tây Ninh</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="menu container">
+        <a
+          href="/Around_VN_With_HCT_project/interface/main_interface.html"
+          class="logo"
+          >TRAVEL AROUND VN</a
+        >
+        <nav class="information">
+          <ul id="main-menu">
+            <li>
+              <a
+                class="active"
+                href="/Around_VN_With_HCT_project/content/Nam/tayninh/tayninh-content.html"
+                >THÔNG TIN</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Around_VN_With_HCT_project/content/Nam/tayninh/tayninh-blog.html"
+                >BLOG</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Around_VN_With_HCT_project/content/Nam/tayninh/tayninh-booking.html"
+                >BOOKING</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Nhạc-->
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+    <!-- Banner -->
+    <div class="banner">
+      <img
+        src="/Around_VN_With_HCT_project/image/content/banner/content-banner.jpg"
+        alt="Tây Ninh Banner"
+      />
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Tây Ninh</h1>
+      <div class="first-content">
+        <p>
+          Tây Ninh là một tỉnh thuộc vùng Đông Nam Bộ, Việt Nam, nằm giáp ranh
+          với Campuchia và cách TP.HCM khoảng 100 km về phía tây bắc. Đây là
+          vùng đất có nhiều nét đặc trưng về lịch sử, văn hóa và du lịch.<br />• Vị
+          trí: Đông Nam Bộ, Việt Nam<br />• Diện tích: 139.92 km²<br />• Dân số: 1.289
+          triệu người<br />• Biệt danh: Thủ phủ bánh tráng phơi sương
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Slogan -->
+    <div class="slogan" data-tilt>
+      <img
+        src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/logo1.jpg"
+        alt=""
+      />
+    </div>
+    <h2>Ai về ghé lại Tây Ninh<br />Thăm núi Bà Đen viếng tòa Thánh Cao</h2>
+
+    <!-- Nội Dung -->
+    <section class="content">
+      <div class="content-gallery">
+        <div class="gallery-grid">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content1.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content2.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content3.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content4.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content5.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content6.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content7.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content8.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content9.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content10.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content11.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content12.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content13.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content14.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content15.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content16.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content17.jpg"
+            alt=""
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Nam/tayninh/content18.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="content-main">
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-mountain-sun"></i> Sự giao thoa phong cảnh của Tây Ninh</h3>
+          <h5>Sự giao thoa giữa núi rừng và đồng bằng</h5>
+          <p>
+            Núi Bà Đen là biểu tượng thiên nhiên của Tây Ninh, cao 986 m, được
+            bao quanh bởi những cánh đồng lúa và vườn cây xanh mướt. Khi đứng
+            trên đỉnh núi, du khách có thể phóng tầm mắt nhìn xuống toàn cảnh
+            Tây Ninh với những mảng xanh trải dài, những con sông uốn lượn và
+            những khu dân cư nhỏ bé. Dưới chân núi là những cánh đồng lúa phì
+            nhiêu, tạo nên sự tương phản giữa nét hùng vĩ của núi cao và sự hiền
+            hòa của đồng bằng.
+          </p>
+          <h5>Sự kết hợp giữa thiên nhiên và công trình nhân tạo:</h5>
+          <p>
+            Hồ Dầu Tiếng là một hồ nước nhân tạo rộng lớn nhưng lại mang vẻ đẹp
+            tự nhiên, thơ mộng. Mặt hồ phẳng lặng soi bóng mây trời, xung quanh
+            là những rừng cây và đồi cỏ xanh mướt. Đây là nơi lý tưởng để tận
+            hưởng sự yên bình giữa thiên nhiên, nhưng cũng không kém phần sôi
+            động với các hoạt động câu cá, cắm trại và thể thao dưới nước. Tòa
+            Thánh Cao Đài nằm giữa một khuôn viên rộng lớn với kiến trúc độc
+            đáo, hòa quyện với thiên nhiên. Công trình này có sự kết hợp của
+            nhiều nền văn hóa khác nhau, nổi bật giữa một vùng đất xanh tươi.
+          </p>
+          <h5>Sự hòa quyện giữa thiên nhiên hoang sơ và tâm linh huyền bí:</h5>
+          <p>
+            Núi Bà Đen không chỉ là điểm du lịch mà còn là một nơi linh thiêng
+            với hệ thống chùa chiền, hang động và đền thờ Phật giáo, thu hút
+            hàng triệu du khách và Phật tử mỗi năm. Sự kết hợp giữa cảnh núi non
+            hùng vĩ và không gian tâm linh tạo nên một cảm giác vừa kỳ bí, vừa
+            thanh tịnh. Những ngôi chùa và đền thờ trên núi, như Chùa Bà Đen,
+            Chùa Hang, Chùa Gò Kén, đều nằm giữa thiên nhiên, tạo nên một khung
+            cảnh vừa tĩnh lặng, vừa huyền ảo.
+          </p>
+          <h5>Phong cảnh biên giới – giao thoa giữa hai nền văn hóa</h5>
+          <p>
+            Tây Ninh có đường biên giới dài với Campuchia, nơi có cửa khẩu Mộc
+            Bài và Xa Mát. Khu vực này mang nét đặc trưng của vùng biên giới với
+            những cánh đồng khô cằn, rừng cao su bạt ngàn và những chợ biên nhộn
+            nhịp. Sự giao thoa giữa văn hóa Việt Nam và Campuchia thể hiện rõ
+            qua kiến trúc, ẩm thực và đời sống của cư dân hai bên biên giới.
+          </p>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-bowl-rice"></i> Ẩm thực</h3>
+          <h5>Bánh tráng phơi sương Trảng Bàng</h5>
+          <p>
+            Đây là món ăn trứ danh của Tây Ninh, nổi bật với lớp bánh tráng dẻo
+            dai, mềm mịn do được phơi sương vào ban đêm. Khi ăn, bánh được cuốn
+            cùng thịt luộc, rau rừng và chấm nước mắm chua ngọt hoặc mắm nêm,
+            tạo nên hương vị hài hòa, khó quên.<br />Đặc điểm hấp dẫn:<br />Bánh
+            tráng mềm, không quá khô hay cứng.<br />Rau ăn kèm có đến hơn 30
+            loại, nhiều loại chỉ có ở Tây Ninh.<br />Nước chấm đậm đà, tạo điểm
+            nhấn cho món ăn.
+          </p>
+          <h5>Bò tơ Tây Ninh</h5>
+          <p>
+            Bò tơ Tây Ninh có thịt mềm, ngọt tự nhiên do bò được nuôi thả trong
+            điều kiện thuận lợi. Bò tơ có thể chế biến thành nhiều món như bò
+            nướng, bò hấp gừng, lẩu bò hay gỏi bò bóp thấu.<br />Món ăn nổi
+            bật:<br />Bò nướng tảng: Thịt bò tươi ướp gia vị, nướng trên bếp
+            than, giữ nguyên vị ngọt.<br />Lẩu bò tơ: Nước lẩu thanh ngọt, ăn kèm
+            rau và mì, rất phù hợp cho các bữa ăn gia đình.<br />Bò hấp cuốn bánh
+            tráng: Ăn kèm rau sống và chấm với mắm nêm đặc trưng
+          </p>
+          <h5>Ốc xu núi Bà Đen</h5>
+          <p>
+            Ốc xu là loại ốc tự nhiên, sống ở các khe đá trên núi Bà Đen. Thịt
+            ốc dai, ngọt, thường được chế biến thành các món như luộc sả, xào me
+            hoặc nướng mỡ hành.<br />Điểm đặc biệt:<br />Ốc có vị ngọt tự nhiên,
+            thịt chắc.<br />Chế biến đơn giản nhưng vẫn giữ được hương vị nguyên
+            bản.
+          </p>
+          <h5>Nem bưởi Tây Ninh</h5>
+          <p>
+            Không giống nem chua thông thường, nem bưởi Tây Ninh được làm từ vỏ
+            bưởi, đu đủ xanh, khế chua, tiêu, ớt, tạo nên vị chua ngọt thanh
+            mát.<br />Cách thưởng thức:<br />Có thể ăn trực tiếp hoặc chấm với
+            tương ớt.<br />Là món ăn chay được nhiều người yêu thích.
+          </p>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-font-awesome"></i> Văn hoá – Bản sắc</h3>
+          <h5>Văn hóa Tây Ninh – Sự pha trộn giữa hiện đại và cổ điển</h5>
+          <p>
+            Tây Ninh là vùng đất có bề dày lịch sử và bản sắc văn hóa độc đáo,
+            nơi giao thoa giữa truyền thống cổ điển và sự phát triển hiện đại.
+            Từ tín ngưỡng, kiến trúc, đến lối sống, tất cả đều phản ánh sự kết
+            hợp hài hòa giữa nét xưa cũ và xu hướng mới của thời đại.
+          </p>
+          <h5>Sự giao thoa giữa cổ điển và hiện đại</h5>
+          <p>
+            1. Kiến trúc – Sự giao thoa giữa cổ điển và hiện đại<br />Tòa Thánh
+            Cao Đài là một biểu tượng kiến trúc đặc trưng của Tây Ninh, kết hợp
+            giữa phong cách Á – Âu với những yếu tố tôn giáo độc đáo. Kiến trúc
+            này mang nét cổ điển nhưng vẫn rất mới lạ, thể hiện sự sáng tạo
+            trong việc kết hợp văn hóa Đông – Tây.<br />Những ngôi chùa cổ như
+            Chùa Bà Đen, Chùa Gò Kén vẫn giữ nguyên kiến trúc truyền thống nhưng
+            đã được trùng tu, bổ sung các công trình hiện đại để phục vụ du
+            khách.<br />Hệ thống cáp treo lên núi Bà Đen là minh chứng cho sự hòa
+            quyện giữa thiên nhiên cổ kính và công nghệ hiện đại, giúp du khách
+            dễ dàng khám phá núi non hùng vĩ.<br />2. Tín ngưỡng và tôn giáo –
+            Giữ gìn truyền thống trong sự thay đổi<br />Tây Ninh là cái nôi của
+            Đạo Cao Đài, một tôn giáo nội sinh kết hợp triết lý của nhiều tôn
+            giáo khác nhau như Phật giáo, Thiên Chúa giáo, Nho giáo… Sự kết hợp
+            này thể hiện rõ tinh thần dung hòa giữa các giá trị cổ điển và tư
+            tưởng mới.<br />Lễ hội núi Bà Đen vẫn giữ nguyên những nghi thức
+            truyền thống như rước kiệu, cúng tế, nhưng cũng đã được tổ chức bài
+            bản hơn với các chương trình văn hóa, nghệ thuật hiện đại để thu hút
+            du khách.<br />3. Ẩm thực – Giữ hương vị truyền thống, biến tấu theo
+            xu hướng mới<br />Bánh tráng phơi sương, bò tơ Tây Ninh vẫn giữ cách
+            chế biến truyền thống nhưng ngày nay đã có thêm nhiều biến tấu hiện
+            đại như bánh tráng trộn, bò tơ sốt phô mai… phù hợp với khẩu vị giới
+            trẻ.<br />Muối tôm Tây Ninh từ một loại gia vị dân dã giờ đã trở
+            thành đặc sản có mặt trên toàn quốc, thậm chí được đóng gói xuất
+            khẩu.<br />4. Lối sống – Giữa nhịp sống hiện đại và nét giản dị xưa
+            cũ<br />Người dân Tây Ninh vẫn duy trì phong cách sống chậm rãi,
+            hiền hòa, gắn bó với thiên nhiên và tín ngưỡng. Tuy nhiên, thế hệ
+            trẻ đang dần tiếp cận với công nghệ, kinh doanh online và các xu
+            hướng hiện đại.<br />Các khu chợ truyền thống vẫn hoạt động sôi động,
+            nhưng song song đó là sự xuất hiện của các trung tâm thương mại,
+            siêu thị, thể hiện sự thay đổi trong thói quen mua sắm.
+          </p>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-location-dot"></i> Địa điểm du lịch</h3>
+          <h5>Núi Bà Đen – “Nóc nhà Nam Bộ”</h5>
+          <p>
+            Núi Bà Đen – “Nóc nhà Nam Bộ” (986m), có cáp treo hiện đại, chùa Bà
+            linh thiêng, cảnh đẹp hùng vĩ.
+          </p>
+          <h5>Hồ Dầu Tiếng</h5>
+          <p>Hồ nước nhân tạo lớn, phong cảnh thơ mộng, thích hợp cắm trại, câu cá.</p>
+          <h5>Tòa Thánh Cao Đài</h5>
+          <p>
+            Kiến trúc độc đáo, trung tâm của Đạo Cao Đài, thu hút khách tham quan
+            và hành hương.
+          </p>
+          <h5>Cửa khẩu Mộc Bài</h5>
+          <p>Nơi giao thương Việt Nam – Campuchia, có trung tâm mua sắm miễn thuế</p>
+          <h5>Tháp cổ Bình Thạnh</h5>
+          <p>Công trình kiến trúc Chăm cổ, mang giá trị lịch sử lâu đời.</p>
+          <h5>Ma Thiên Lãnh</h5>
+          <p>
+            Khu sinh thái hoang sơ, phù hợp cho dân phượt, leo núi, khám phá
+            thiên nhiên.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <hr />
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Về Chúng Tôi</h2>
+            <p>
+              Chúng tôi mang sứ mệnh giới thiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Liên hệ</h2>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>
+              Điện thoại:
+              <ul>
+                <li>(+84) 79439905</li>
+                <li>(+84) 99860345</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>© 2024 [Tên công ty]. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $("header").addClass("sticky");
+        } else {
+          $("header").removeClass("sticky");
+        }
+      });
+    });
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

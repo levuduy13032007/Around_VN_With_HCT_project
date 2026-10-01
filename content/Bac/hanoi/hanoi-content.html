@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hà Nội</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="menu container">
+        <a
+          href="/Around_VN_With_HCT_project/interface/main_interface.html"
+          class="logo"
+          >TRAVEL AROUND VN</a
+        >
+        <nav class="information">
+          <ul id="main-menu">
+            <li>
+              <a
+                class="active"
+                href="/Around_VN_With_HCT_project/content/Bac/hanoi/hanoi-content.html"
+                >THÔNG TIN</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Around_VN_With_HCT_project/content/Bac/hanoi/hanoi-blog.html"
+                >BLOG</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Around_VN_With_HCT_project/content/Bac/hanoi/hanoi-booking.html"
+                >BOOKING</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Nhạc-->
+
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+    <!-- Banner -->
+    <div class="banner">
+      <img
+        src="/Around_VN_With_HCT_project/image/content/banner/content-banner.jpg"
+        alt="Hà Nội Banner"
+      />
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Hà Nội</h1>
+      <div class="first-content">
+        <p>
+          Hà Nội, thủ đô của Việt Nam, nổi tiếng với kiến trúc trăm tuổi và nền
+          văn hóa phong phú với sự ảnh hưởng của khu vực Đông Nam Á, Trung Quốc
+          và Pháp. Hà Nội thu hút du khách bởi nét đặc trưng về vùng đất nghìn
+          năm văn hiến, mang đậm nét bản sắc dân tộc cùng nhiều điểm đến sôi
+          động, hiện đại và hấp dẫn.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- Slogan -->
+    <div class="slogan">
+      <img
+        src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/logo1.jpg"
+        alt="Slogan"
+      />
+    </div>
+    <h2>Hồ Tây mờ sương, lá vẫn đỏ <br />Gió thổi lay lá, tiếng hát xa xa</h2>
+
+    <!-- Nội dung -->
+    <section class="content">
+      <div class="content-gallery">
+        <div class="gallery-grid">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content1.jpg"
+            alt="Hình 1"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content2.jpg"
+            alt="Hình 2"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content3.jpg"
+            alt="Hình 3"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content4.jpg"
+            alt="Hình 4"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content5.jpg"
+            alt="Hình 5"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content11.jpg"
+            alt="Hình 11"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content6.jpg"
+            alt="Hình 6"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content7.jpg"
+            alt="Hình 7"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content8.jpg"
+            alt="Hình 8"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content9.jpg"
+            alt="Hình 9"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content10.jpg"
+            alt="Hình 10"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content11.jpg"
+            alt="Hình 11"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content12.jpg"
+            alt="Hình 12"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content13.jpg"
+            alt="Hình 13"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content14.jpg"
+            alt="Hình 14"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content6.jpg"
+            alt="Hình 6"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content15.jpg"
+            alt="Hình 15"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content16.jpg"
+            alt="Hình 16"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content17.jpg"
+            alt="Hình 17"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content18.jpg"
+            alt="Hình 18"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content15.jpg"
+            alt="Hình 15"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content2.jpg"
+            alt="Hình 2"
+          />
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Bac/hanoi/content1.jpg"
+            alt="Hình 1"
+          />
+        </div>
+      </div>
+      <div class="content-main">
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-mountain-sun"></i> Phong cảnh</h3>
+          <div class="sub-item">
+            <h5>Tháp Rùa – Hồ Hoàn Kiếm</h5>
+            <p>
+              Hồ nằm ở vị trí trung tâm của thành phố và được ví như “trái tim”
+              của thủ đô. Mặt hồ xanh màu rêu cổ kính như một tấm gương khổng lồ
+              soi bóng những cây cổ thụ cành lá sum suê, những rặng liễu rủ
+              thướt tha cùng toà nhà Bưu điện và dãy nhà cao tầng xung quanh
+              vươn lên giữa trời xanh.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Hồ Tây</h5>
+            <p>
+              Đây là hồ tự nhiên lớn nhất tại Hà Nội với diện tích lên đến
+              500ha, chu vi khoảng 20km. Hồ Tây từ lâu đã trở thành điểm nhấn
+              đặc biệt của Thủ đô với cảnh quan xanh mát, thơ mộng giữa phố
+              phường nhộn nhịp.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Cầu Thê Húc</h5>
+            <p>
+              Cầu Thê Húc – một cây cầu nhỏ cong cong như hình con tôm nối với
+              một hòn đảo nhỏ giữa hồ Hoàn Kiếm, nơi có đền Ngọc Sơn. Cây cầu
+              nằm trong quần thể di tích “đền Ngọc Sơn – cầu Thê Húc – tháp Bút
+              – đài Nghiên” đã và đang được Hà Nội bảo tồn như một tinh hoa văn
+              hóa của dân tộc.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Chùa Một Cột</h5>
+            <p>
+              Là điểm đến du lịch hấp dẫn cho du khách thập phương khi đặt chân
+              đến vùng đất kinh kì mang đậm bản sắc văn hóa. Chùa có kiến trúc
+              đặc trưng vô cùng độc đáo tựa như một đóa sen nở trên mặt nước nên
+              còn có tên gọi là Liên Hoa Đài.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Lăng Chủ tịch Hồ Chí Minh</h5>
+            <p>
+              Là một trong những địa điểm thiêng liêng và danh lam thắng cảnh
+              nổi tiếng nhất của Hà Nội, nơi yên nghỉ cuối cùng của vị lãnh tụ
+              vĩ đại của dân tộc Việt Nam - Chủ tịch Hồ Chí Minh. Lăng Bác mang
+              đậm dấu ấn văn hóa Việt Nam với những đường nét trang nhã, mộc mạc
+              nhưng không kém phần trang trọng và uy nghiêm.
+            </p>
+          </div>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-bowl-rice"></i> Ẩm thực</h3>
+          <div class="sub-item">
+            <h5>Phở</h5>
+            <p>
+              Món ăn đặc trưng lâu đời mang hương vị đất Bắc. Một tô phở Hà Nội
+              bao gồm nước dùng, bánh phở trắng, thịt bò, rau thơm, hành lá,
+              hành tây,... Điểm đặc biệt nhất của món phở đó là phần nước dùng
+              trong vắt, có mùi thơm và ngọt được đun từ xương bò.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Bún chả Hà Nội</h5>
+            <p>
+              Bún chả hấp dẫn thực khách bởi hương vị đậm đà của thịt nướng được
+              tẩm ướp đầy đủ, nướng chín tới ăn kèm với bún, rau sống và nước
+              chấm chua ngọt.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Bún đậu mắm tôm</h5>
+            <p>
+              Là một món ăn rất đơn giản, bao gồm các nguyên liệu là bún lá, đậu
+              rán giòn, mắm tôm đã được pha chế và rau thơm ăn kèm. Hiện nay,
+              khi ăn người ta còn sử dụng thêm thịt luộc, chả cốm, lòng, nem
+              rán,...
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Bún thang</h5>
+            <p>
+              Món ăn này còn được người ta mệnh danh với cái tên thân thuộc
+              “Thăng Long đệ nhất bún”. Thành phần chế biến và cách trình bày
+              bún thang khá cầu kỳ. Người ta sẽ cho thêm trứng tráng mỏng, giò
+              lụa, thịt gà, nấm, củ cải khô và rau thơm đều được thái thành sợi
+              nhỏ.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Cà phê trứng</h5>
+            <p>
+              Cà phê trứng là thức uống sáng tạo của người dân Hà Nội và ngày
+              nay được biết đến như một trong những hương vị đại diện cho ẩm
+              thực thủ đô. Cà phê trứng là thức uống đặc trưng với vị cà phê
+              đắng, kết hợp cùng kem trứng ngọt ngào, thơm ngậy.
+            </p>
+          </div>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-font-awesome"></i> Văn hoá – Bản sắc</h3>
+          <div class="sub-item">
+            <h5>
+              Khu phố cổ – nơi lưu giữ dấu ấn của một “Hà Nội băm sáu phố
+              phường” thuở xưa
+            </h5>
+            <p>
+              Khu “36 phố phường” Hà Nội nằm ở phía đông bắc thành cổ trong gần
+              10 thế kỷ đã chứng kiến biết bao sự kiện lịch sử hào hùng của dân
+              tộc trong sự nghiệp chống ngoại xâm giữ nền độc lập cho nước nhà.
+              Nơi đây, không chỉ đã từng là một trung tâm kinh tế mà còn là một
+              trung tâm văn hoá đa dạng; văn hoá ẩm thực phong phú …
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Thành cổ Thăng Long</h5>
+            <p>
+              Hoành tráng về quy mô, độc đáo về kiến trúc, lộng lẫy về nghệ
+              thuật, Hoàng Thành chính là một biểu tượng sống động của một kinh
+              đô được xây dựng cách đây hàng ngàn năm, là di tích độc nhất vô
+              nhị, mang tính biểu tượng cho cộng đồng người dân Hà Nội, có giá
+              trị lịch sử đứng vững trước thời gian, không gian.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Thành Cổ Loa</h5>
+            <p>
+              Gắn với truyền thuyết thần Kim Quy nổi tiếng, Cổ Loa là minh chứng
+              về một nhà nước Âu Lạc hùng mạnh, một bài học về bảo mật quốc gia,
+              một bi kịch mất nước, một tiếng lòng cảm thông trước số phận tình
+              yêu giữa hai con người trẻ tuổi vừa là kẻ có tội vừa là nạn nhân
+              của những mưu đồ đen tối.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Văn Miếu Quốc Tử Giám</h5>
+            <p>
+              Văn Miếu được xây dựng tháng 10 năm 1070, thờ Khổng Tử, các bậc
+              Hiền triết của Nho giáo và Tư nghiệp Quốc Tử Giám Chu Văn An,
+              người thầy tiêu biểu đạo cao, đức trọng của nền giáo dục Việt Nam.
+              Là biểu tượng của nền học vấn quốc gia, truyền thống hiếu học,
+              thái độ trân trọng, tôn vinh người hiền tài của dân tộc.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Nghệ thuật truyền thống</h5>
+            <p>Chèo, ca trù, xẩm vẫn được bảo tồn.</p>
+          </div>
+          <div class="sub-item">
+            <h5>Tết cổ truyền</h5>
+            <p>
+              Gói bánh chưng, thả cá tiễn ông Công ông Táo, du xuân chùa Trấn
+              Quốc.
+            </p>
+          </div>
+        </div>
+        <div class="content-sub">
+          <h3><i class="fa-solid fa-location-dot"></i> Địa điểm du lịch</h3>
+          <div class="sub-item">
+            <h5>Hồ Hoàn Kiếm</h5>
+            <p>
+              Được xem là biểu tượng của Hà Nội, Hồ Hoàn Kiếm có ý nghĩa văn hóa
+              và lịch sử lâu đời làm nên nét đẹp của Thủ Đô nghìn năm văn hiến.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Chùa Một Cột</h5>
+            <p>
+              Đây là một công trình kiến trúc cổ cực kỳ độc đáo mà đến nay năm
+              xây dựng chính xác của Chùa vẫn còn khiến các nhà sử học tranh
+              cãi. Ngôi chùa được xây dựng bằng gỗ, bao gồm đài Liên Hoa hình
+              vuông, dựng trên một cột cao 4 mét.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Văn Miếu Quốc Tử Giám</h5>
+            <p>
+              Văn Miếu - Quốc Tử Giám là trường Quốc học đầu tiên tại Việt Nam.
+              Tại đây đã đào tạo ra rất nhiều thế hệ hiền tài cho đất nước. Văn
+              Miếu thờ 3 vị vua anh minh của dân tộc: Lý Thánh Tông, Lý Nhân
+              Tông và Lê Thánh Tông.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Quảng trường Ba Đình – Lăng Bác</h5>
+            <p>
+              Quảng trường Ba Đình lịch sử, nơi Bác Hồ đọc tuyên ngôn độc lập
+              khai sinh ra nước CHXHCN Việt Nam. Bên trong quảng trường chính là
+              Lăng Bác, nơi lưu giữ thi hài của Chủ tịch Hồ Chí Minh. Đây là nơi
+              mà mỗi người con đất Việt đều muốn viếng thăm một lần trong đời để
+              bày tỏ tấm lòng thành kính với vị cha già kính yêu của dân tộc.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Phố cổ Hà Nội</h5>
+            <p>
+              Phố Cổ là những ngôi nhà, con đường, góc phố mang đậm kiến trúc
+              của người Pháp thế kỷ 19. Qua bao thăng trầm của lịch sử và thời
+              gian, nơi đây vẫn giữ được nguyên vẹn nét kiến trúc như thuở ban
+              đầu.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Chùa Trấn Quốc</h5>
+            <p>
+              Chùa Trấn Quốc dưới thời Pháp thuộc từng được công nhận là một
+              trong 10 công trình có giá trị lịch sử bậc nhất trên toàn xứ Đông
+              Dương. Với những giá trị về lịch sử, tín ngưỡng cũng như kiến
+              trúc, chùa Trấn Quốc là một trong các điểm du lịch Hà Nội thu hút.
+            </p>
+          </div>
+          <div class="sub-item">
+            <h5>Hồ Tây</h5>
+            <p>
+              Hồ Tây có diện tích lớn nhất Hà Nội, được ví như là phổi xanh của
+              Thủ đô với diện tích rộng hơn 500 ha, chu vi vòng quanh hồ lên tới
+              17km cùng bề dày lịch sử mấy nghìn năm, không chỉ đẹp bởi mặt nước
+              trong xanh mênh mông mà còn được điểm thêm sắc đỏ tím của hoa Bằng
+              Lăng, hoa Phượng và màu xanh của cây lá.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <hr />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Về chúng tôi</h2>
+            <p>
+              Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Liên hệ</h2>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>Điện thoại: (+84) 99860345</p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>&copy; 2025 Bản quyền thuộc về tổ 1</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop()) {
+            $("header").addClass("sticky");
+          } else {
+            $("header").removeClass("sticky");
+          }
+        });
+      });
+
+      //load
+      const loaderContainer = document.querySelector(".loader-container");
+
+      window.addEventListener("load", () => {
+        // Đợi 1 giây trước khi ẩn
+        setTimeout(() => {
+          loaderContainer.classList.add("unactive");
+        }, 500);
+      });
+    </script>
+  </body>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

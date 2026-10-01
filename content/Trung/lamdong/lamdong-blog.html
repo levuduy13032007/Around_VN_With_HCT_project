@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lâm Đồng</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/content/content-style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <!-- menu -->
+    <div id="wrapper">
+      <header>
+        <div class="menu container">
+          <a
+            href="/Around_VN_With_HCT_project/interface/main_interface.html"
+            class="logo"
+            >TRAVEL AROUND VN</a
+          >
+          <div class="information">
+            <ul id="main-menu">
+              <li>
+                <a
+                  class="active"
+                  href="/Around_VN_With_HCT_project/content/Bac/hanoi-content.html"
+                  >THÔNG TIN</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Bac/hanoi-blog.html"
+                  >BLOG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/Around_VN_With_HCT_project/content/Bac/hanoi-booking.html"
+                  >BOOKING</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!--Nhạc-->
+      <div class="music-icon">
+        <i class="fa-solid fa-music"></i>
+      </div>
+
+      <!-- Modal điều khiển nhạc -->
+      <div class="music-modal">
+        <div class="modal-content">
+          <span class="close-btn">×</span>
+          <div class="music-info">
+            <span class="song-title">Tên bài hát</span>
+            <div class="wave-animation"></div>
+          </div>
+          <div class="controls">
+            <button class="control-btn prev-btn">
+              <i class="fa-solid fa-backward"></i>
+            </button>
+            <button class="control-btn play-pause-btn">
+              <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="control-btn next-btn">
+              <i class="fa-solid fa-forward"></i>
+            </button>
+            <input
+              type="range"
+              class="volume-slider"
+              min="0"
+              max="1"
+              step="0.01"
+              value="0.3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio element ẩn -->
+      <audio id="background-audio" autoplay loop></audio>
+
+      <!-- banner -->
+      <div class="banner">
+        <img
+          src="/Around_VN_With_HCT_project/image/content/banner/blog-banner.jpg"
+          alt="Lâm Đồng Blog Banner"
+        />
+      </div>
+    </div>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Tiêu đề -->
+    <div id="title">
+      <h1>Blog</h1>
+      <div class="first-content">
+        <p>
+          Hành trình sẽ đưa bạn dạo bước trên những con đường rợp bóng thông,
+          cảm nhận làn sương nhẹ nhàng ôm lấy phố núi. Bạn sẽ được thưởng thức
+          ly cà phê đậm đà giữa tiết trời se lạnh, nhâm nhi miếng bánh tráng
+          nướng giòn rụm hay lẩu gà lá é ấm lòng. Hòa mình vào không gian thơ
+          mộng của Đà Lạt và những vùng quê yên bình của Lâm Đồng sẽ mang đến
+          cho bạn những trải nghiệm khó quên.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!--Blog-->
+    <section id="blog">
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/blog1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3>ĐÀ LẠT – THÀNH PHỐ NGÀN HOA</h3>
+          <p>
+            Đà Lạt không chỉ nổi tiếng với những cảnh đẹp nên thơ mà còn là
+            thiên đường cho những ai yêu thích không gian lãng mạn và khí hậu
+            mát mẻ.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Dạo bước quanh Hồ Xuân Hương và tận hưởng không khí trong lành Khám
+            phá các điểm check-in nổi tiếng như Thung lũng Tình Yêu, Đồi chè Cầu
+            Đất Thưởng thức ẩm thực độc đáo của Đà Lạt với bánh tráng nướng,
+            lẩu gà lá é Trải nghiệm cảm giác phiêu lưu khi trekking núi
+            Langbiang
+          </div>
+        </div>
+        <h2>24/07</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/blog2.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3>CHINH PHỤC NÚI LANGBIANG – NÓC NHÀ CỦA ĐÀ LẠT</h3>
+          <p>
+            Núi Langbiang là một trong những điểm đến không thể bỏ qua khi đến
+            Đà Lạt, mang đến trải nghiệm leo núi tuyệt vời cùng góc nhìn toàn
+            cảnh thành phố.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Hành trình leo núi hoặc đi xe jeep lên đỉnh Langbiang. Ngắm nhìn Đà
+            Lạt từ độ cao hơn 2.000m. Tìm hiểu truyền thuyết về chuyện tình bi
+            thương K’Lang và H’Biang. Thưởng thức cà phê trên đỉnh núi trong
+            không gian se lạnh.
+          </div>
+        </div>
+        <h2>25/07</h2>
+      </div>
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/blog3.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3>THÁC PONGOUR – TUYỆT TÁC GIỮA ĐẠI NGÀN</h3>
+          <p>
+            Thác Pongour là một trong những thác nước đẹp nhất Tây Nguyên, với
+            dòng nước đổ xuống những bậc đá xếp tầng tuyệt đẹp.
+          </p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content">
+            Hành trình đến thác Pongour – viên ngọc xanh giữa núi rừng. Chiêm
+            ngưỡng vẻ đẹp hoang sơ, hùng vĩ của thác nước bảy tầng. Tận hưởng
+            không gian thiên nhiên yên bình, lý tưởng để cắm trại. Khám phá
+            truyền thuyết về nữ tù trưởng K’Ho gắn liền với thác.
+          </div>
+        </div>
+        <h2>26/07</h2>
+      </div>
+      <!-- Blog 4 bị thiếu nội dung trong code gốc, tôi sửa lỗi cú pháp và để trống -->
+      <div class="blog-box" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <div class="blog-img">
+          <img
+            src="/Around_VN_With_HCT_project/image/content/Trung/lamdong/blog4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="blog-details">
+          <h3></h3>
+          <p></p>
+          <span class="click-content">Tiếp tục đọc</span>
+          <div class="hidden-content"></div>
+        </div>
+        <h2></h2>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Về Chúng Tôi</h3>
+            <p>
+              Chúng tôi mang sứ mệnh giới thiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i> Youtube</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>
+              Điện thoại:
+              <ul>
+                <li>(+84) 79439905</li>
+                <li>(+84) 99860345</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>© 2024 [Tên công ty]. Tất cả các quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="/Around_VN_With_HCT_project/vanilla-tilt.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop()) {
+          $("header").addClass("sticky");
+        } else {
+          $("header").removeClass("sticky");
+        }
+      });
+    });
+
+    //ẩn nội dung trong blog
+    const clickContents = document.querySelectorAll(".click-content");
+    const hiddenContents = document.querySelectorAll(".hidden-content");
+
+    clickContents.forEach((clickContent, index) => {
+      clickContent.addEventListener("click", () => {
+        if (
+          hiddenContents[index].style.display === "none" ||
+          hiddenContents[index].style.display === ""
+        ) {
+          hiddenContents[index].style.display = "block";
+        } else {
+          hiddenContents[index].style.display = "none";
+        }
+      });
+    });
+
+    //load
+    const loaderContainer = document.querySelector(".loader-container");
+
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        loaderContainer.classList.add("unactive");
+      }, 500);
+    });
+  </script>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>

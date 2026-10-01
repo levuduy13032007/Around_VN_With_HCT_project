@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khám Phá Việt Nam</title>
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/interface/artistry-style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- liên kết với file font awesome để thêm icon-->
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/fontawesome-free-6.7.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-javascript.js"
+    />
+    <link
+      rel="stylesheet"
+      href="/Around_VN_With_HCT_project/audio/audio-style.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu container">
+        <a
+          href="/Around_VN_With_HCT_project/interface/main_interface.html"
+          class="logo"
+          >TRAVEL AROUND VN</a
+        >
+        <nav class="information">
+          <ul id="main-menu">
+            <li>
+              <a href="#" class="active">THÔNG TIN</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Nhạc-->
+
+    <div class="music-icon">
+      <i class="fa-solid fa-music"></i>
+    </div>
+
+    <!-- Modal điều khiển nhạc -->
+
+    <div class="music-modal">
+      <div class="modal-content">
+        <span class="close-btn">×</span>
+        <div class="music-info">
+          <span class="song-title">Tên bài hát</span>
+          <div class="wave-animation"></div>
+        </div>
+        <div class="controls">
+          <button class="control-btn prev-btn">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="control-btn play-pause-btn">
+            <i class="fa-solid fa-pause"></i>
+          </button>
+          <button class="control-btn next-btn">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio element ẩn -->
+    <audio id="background-audio" autoplay loop></audio>
+
+    <!--Load-->
+    <div class="loader-container">
+      <div class="loader"></div>
+      <div class="loader"></div>
+      <div class="loader"></div>
+    </div>
+
+    <div class="title">
+      <h1>Khám Phá Việt Nam</h1>
+    </div>
+
+    <section class="content">
+      <div class="card">
+        <div class="video-section">
+          <video controls>
+            <source
+              src="/Around_VN_With_HCT_project/video/artistry/Why Not Vietnam_ (Clip của Tổng cục Du lịch quảng bá hình ảnh Du lịch Việt Nam phát trên kênh CNN).mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+          </video>
+        </div>
+        <div class="text-section">
+          <h2>Việt Nam</h2>
+          <p>
+            Việt Nam là điểm đến lý tưởng với cảnh quan thiên nhiên đa dạng và
+            văn hóa đặc sắc. Du khách có thể khám phá vịnh Hạ Long kỳ vĩ, hòa
+            mình vào phố cổ Hội An lung linh hay tận hưởng vẻ đẹp hoang sơ của
+            Phú Quốc. Không chỉ có danh lam thắng cảnh, Việt Nam còn hấp dẫn bởi
+            nền ẩm thực phong phú và con người hiếu khách, tạo nên những trải
+            nghiệm khó quên cho du khách.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="video-section">
+          <video controls>
+            <source
+              src="/Around_VN_With_HCT_project/video/artistry/Bắc Bling.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+          </video>
+        </div>
+        <div class="text-section">
+          <h2>Bắc Ninh</h2>
+          <p>
+            Bắc Ninh là vùng đất Kinh Bắc giàu truyền thống, nổi tiếng với những
+            ngôi chùa cổ kính như chùa Dâu, chùa Bút Tháp và làn điệu quan họ
+            ngọt ngào. Quan họ Bắc Ninh, di sản văn hóa phi vật thể của nhân
+            loại, gắn liền với hình ảnh liền anh, liền chị trong những bộ áo tứ
+            thân, nón quai thao, trao nhau câu hát trữ tình. Không chỉ có văn
+            hóa đặc sắc, Bắc Ninh còn thu hút du khách với các làng nghề truyền
+            thống như gốm Phù Lãng, tranh Đông Hồ, mang đậm dấu ấn lịch sử và
+            nghệ thuật.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="video-section">
+          <video controls>
+            <source
+              src="/Around_VN_With_HCT_project/video/artistry/Huế.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+          </video>
+        </div>
+        <div class="text-section">
+          <h2>Cố đô Huế</h2>
+          <p>
+            Cố đô Huế mang vẻ đẹp trầm mặc với quần thể di tích cung đình, lăng
+            tẩm nguy nga và dòng sông Hương thơ mộng. Nơi đây không chỉ lưu giữ
+            giá trị lịch sử của triều đại nhà Nguyễn mà còn nổi tiếng với nhã
+            nhạc cung đình – di sản văn hóa phi vật thể của nhân loại.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="video-section">
+          <video controls>
+            <source
+              src="/Around_VN_With_HCT_project/video/artistry/TP Hồ Chí Minh.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+          </video>
+        </div>
+        <div class="text-section">
+          <h2>Thành phố Hồ Chí Minh</h2>
+          <p>
+            Thành phố Hồ Chí Minh là trung tâm kinh tế, văn hóa sôi động bậc
+            nhất Việt Nam, nổi bật với những công trình lịch sử như Dinh Độc
+            Lập, Nhà thờ Đức Bà, cùng nhịp sống hiện đại và nền ẩm thực phong
+            phú.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="video-section">
+          <video controls>
+            <source
+              src="/Around_VN_With_HCT_project/video/artistry/An Giang.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+          </video>
+        </div>
+        <div class="text-section">
+          <h2>An Giang</h2>
+          <p>
+            An Giang là vùng đất miền Tây sông nước, nổi bật với cảnh quan thiên
+            nhiên hùng vĩ như rừng tràm Trà Sư, núi Sam và văn hóa đặc sắc của
+            cộng đồng Chăm, Khmer. Nơi đây còn thu hút du khách với các điểm đến
+            tâm linh như Miếu Bà Chúa Xứ, chùa Hang, cùng những phiên chợ nổi và
+            làng bè đặc trưng của vùng sông nước.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="video-section">
+          <video controls>
+            <source
+              src="/Around_VN_With_HCT_project/video/artistry/Hà Tiên-Kiên Giang.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+          </video>
+        </div>
+        <div class="text-section">
+          <h2>Hà Tiên</h2>
+          <p>
+            Hà Tiên là điểm đến ven biển tuyệt đẹp ở Kiên Giang, nổi tiếng với
+            những bãi biển hoang sơ như Mũi Nai, Thạch Động kỳ vĩ và di tích
+            lịch sử gắn liền với dòng họ Mạc. Nơi đây còn mang đậm nét văn hóa
+            giao thoa giữa Việt, Hoa, Khmer, tạo nên một vùng đất vừa thơ mộng
+            vừa giàu bản sắc.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="video-section">
+          <video controls>
+            <source
+              src="/Around_VN_With_HCT_project/video/artistry/Đồng Tháp.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+          </video>
+        </div>
+        <div class="text-section">
+          <h2>Đồng Tháp</h2>
+          <p>
+            Đồng Tháp là vùng đất trù phú của miền Tây, nổi tiếng với những cánh
+            đồng sen bát ngát, vườn quốc gia Tràm Chim và làng hoa Sa Đéc rực
+            rỡ. Nơi đây còn mang đậm dấu ấn lịch sử với khu di tích Gò Tháp và
+            nền văn hóa đặc trưng của vùng sông nước Nam Bộ.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="video-section">
+          <video controls>
+            <source
+              src="/Around_VN_With_HCT_project/video/artistry/Bà Rịa-Vũng Tàu.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+          </video>
+        </div>
+        <div class="text-section">
+          <h2>Vũng Tàu</h2>
+          <p>
+            Vũng Tàu là thành phố biển sôi động, nổi tiếng với những bãi tắm đẹp
+            như Bãi Sau, Bãi Trước, cùng các địa danh nổi bật như tượng Chúa
+            Kito, ngọn hải đăng và khu du lịch Hồ Mây. Nơi đây còn thu hút du
+            khách với hải sản tươi ngon và không khí biển trong lành, thích hợp
+            cho những chuyến nghỉ dưỡng ngắn ngày.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="video-section">
+          <video controls>
+            <source
+              src="/Around_VN_With_HCT_project/video/artistry/Lâm Đồng.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+          </video>
+        </div>
+        <div class="text-section">
+          <h2>Lâm Đồng</h2>
+          <p>
+            Lâm Đồng là vùng đất cao nguyên thơ mộng, nổi tiếng với Đà Lạt –
+            thành phố ngàn hoa, khí hậu mát mẻ quanh năm. Nơi đây hấp dẫn du
+            khách bởi những thắng cảnh đẹp như hồ Xuân Hương, thung lũng Tình
+            Yêu, thác Datanla cùng những đồi chè, vườn dâu xanh mướt.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="video-section">
+          <video controls>
+            <source
+              src="/Around_VN_With_HCT_project/video/artistry/Hà Nội.mp4"
+              type="video/mp4"
+            />
+            Trình duyệt của bạn không hỗ trợ thẻ video.
+          </video>
+        </div>
+        <div class="text-section">
+          <h2>Hà Nội</h2>
+          <p>
+            Hà Nội là thủ đô ngàn năm văn hiến, nổi bật với những công trình
+            lịch sử như Hồ Gươm, Văn Miếu – Quốc Tử Giám và phố cổ Hà Nội. Nơi
+            đây không chỉ lưu giữ nét đẹp văn hóa truyền thống mà còn hấp dẫn du
+            khách với ẩm thực phong phú, từ phở, bún chả đến cà phê trứng đặc
+            trưng.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Về chúng tôi</h3>
+            <p>
+              Chúng tôi mang sứ mệnh giới hiệu mảnh đất Việt Nam đến mọi người
+            </p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i> linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Liên hệ</h3>
+            <p>Địa chỉ: Mỹ Hòa/Mỹ Hội Đông, Nhơn Mỹ, Chợ Mới, An Giang</p>
+            <p>Email: AroundVN-with-HCT@gmail.com</p>
+            <p>Điện thoại: (+84) 99860345</p>
+          </div>
+        </div>
+        <div class="footer-bottom scroll-animation">
+          <p>&copy; 2025 Bản quyền thuộc về tổ 1</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      //load
+      const loaderContainer = document.querySelector(".loader-container");
+
+      window.addEventListener("load", () => {
+        // Đợi 1 giây trước khi ẩn
+        setTimeout(() => {
+          loaderContainer.classList.add("unactive");
+        }, 500);
+      });
+    </script>
+  </body>
+  <script src="/Around_VN_With_HCT_project/audio/audio-javascript.js"></script>
+</html>
